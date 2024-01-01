@@ -1,0 +1,39 @@
+.skills__section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.skills__frontend,
+.skills__backend,
+.skills__database,
+.skills__mobile {
+    margin: 1.5rem 0;
+}
+
+.skills__title {
+    text-align: center;
+}
+
+.skills__content-boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.skills__content-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.75rem;
+}
+
+.skills__content-box i {
+    color: rgb(255, 255, 255);
+    filter: brightness(100) saturate(0%);
+    font-size: 64px;
+}

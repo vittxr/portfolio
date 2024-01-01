@@ -1,0 +1,17 @@
+$('.owl-carousel').owlCarousel({
+    loop:false,
+    margin:10,
+    nav:true,
+    navDots:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        800:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+})

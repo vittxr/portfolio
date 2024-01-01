@@ -1,3 +1,4 @@
-### portfolio
+# Portfólio
 
-  Este é meu portfolio em forma de um site. Aqui há os meus melhores projetos, além de ter algumas coisas sobre mim xD
+### Esse é o repositório do meu portfólio, mostrando meus projetos :).  Você pode acessá-lo neste link: https://vittxr-portfolio.herokuapp.com
+

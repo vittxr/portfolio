@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0D0D0D;
+    color: #F2F2F2;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    background: #CDCDCD;
+    border-radius: 4px;
+}
+
+.btn:active,
+.btn:hover {
+    background:#cdcdcdd1; 
+    cursor: pointer;
+}
+
+.section__main-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F2F2F2;
+}
+
+.section__description {
+    font-size: 1.25rem;
+    color: #c3c1c1;
+}
+
+a {
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    opacity: 0.75;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

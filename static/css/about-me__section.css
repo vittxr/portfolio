@@ -1,0 +1,54 @@
+.about-me__section {
+    /* width: 100vw; */
+    /* height: 80rem; */
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0.5rem 0 0.5rem;
+}
+
+.about-me__perfil-pic {
+    width: 148px;
+    height: 148px;
+    margin-bottom: 0.75rem;
+}
+
+.about-me__description-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me__description-box .about-me__paragraph {
+    width: 70%;
+    text-align: center;
+}
+
+.about-me__profile-box {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    margin: 4rem auto 0 auto;
+}
+
+.about-me__profile-box > .about-me__title {
+    text-align: center;
+}
+
+.about-me__profile-content-box {
+    /* height: 83px; */
+    margin: 1rem 0;
+}
+
+/* .about-me__profile-content-box .about-me__paragraph {
+    margin-left: 5%;
+} */
+
+.about-me__description-box {
+    margin-top: 1.5rem;
+}
+
+.about-me__link {
+    text-decoration: underline;
+}
