@@ -1,5 +1,6 @@
 <script>
-    import Sun from './../../components/icons/Sun.svelte';
+    import Logo from '../../components/icons/Logo.svelte';
+import Sun from './../../components/icons/Sun.svelte';
     import { onMount } from 'svelte';
 
 
@@ -21,11 +22,13 @@
 
 <header class="flex justify-between">
   <div>
-    <a>LOGO</a>
+    <a>
+      <Logo className="text-black dark:text-white"/>
+    </a>
   </div>
   <div>
     <button on:click={toggleTheme} >
         <Sun className="text-black dark:text-white"/>
-      </button>
+    </button>
   </div>
 </header>

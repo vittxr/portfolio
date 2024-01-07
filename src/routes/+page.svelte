@@ -6,7 +6,7 @@
     <div class="w-5/6 mx-auto py-10">
         <Header />
         <main>
-            <h1 class="text-3xl font-bold underline">
+            <h1 class="text-black dark:text-white text-3xl font-bold underline">
                 under dev...
             </h1>
         </main>
