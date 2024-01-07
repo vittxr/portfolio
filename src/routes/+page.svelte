@@ -1,3 +1,14 @@
-<h1>Hello, this will be my portfolio!</h1>
+<script>
+    import Header from './common/Header.svelte';
+</script>
 
-<a href="/about">About my site</a>
+<div class="w-screen h-screen dark:bg-black">
+    <div class="w-5/6 mx-auto py-10">
+        <Header />
+        <main>
+            <h1 class="text-3xl font-bold underline">
+                under dev...
+            </h1>
+        </main>
+    </div>
+</div>
