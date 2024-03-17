@@ -2,12 +2,7 @@
   import '../app.css'
   import { browser } from '$app/environment'
   import '$lib/i18n' 
-  import { locale, waitLocale } from 'svelte-i18n'
-  // import { dev } from '$app/environment';
-
-  // vercel analytics config
-  // import { inject } from '@vercel/analytics';
-  // inject({ mode: dev ? 'development' : 'production' });
+  import { locale, waitLocale, isLoading } from 'svelte-i18n'
 
   export const load = async () => {
     if (browser) {
@@ -15,7 +10,11 @@
     }
     await waitLocale()
   }
-
+  console.log('isLoading', $isLoading)
 </script>
 
-<slot />
+{#if $isLoading}
+  Please wait...
+{:else}
+  <slot />
+{/if}
