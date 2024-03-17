@@ -13,8 +13,8 @@
 	"devDependencies": {
 		"@rollup/plugin-json": "^6.1.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/adapter-vercel": "next",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^5.1.1",
+		"@sveltejs/kit": "^2.5.4",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"autoprefixer": "^10.4.16",
 		"postcss": "^8.4.33",
