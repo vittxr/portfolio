@@ -1,38 +1,29 @@
-# create-svelte
+# Deploy
+Sources: 
+  - https://kit.svelte.dev/docs/adapter-netlify
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+I host the website on Netlify. The deployment process is straightforward: when the GitHub repository updates, Netlify automatically deploys the new version of the repository.
+  
+Since I use SSR, I need to set up the Svelte-Netlify adapter. By default, Svelte uses the Svelte-Auto adapter, but we need to change it to the Netlify adapter to make it work on their server. The following are the required steps to set up this adapter:
 
-## Creating a project
+1. Add the `"@sveltejs/adapter-netlify": "^4.1.0",` dependency in `package.json`.
+2. Update the adapter in the `svelte.config.js` file:
 
-If you're seeing this, you've probably already done this step. Congrats!
+```js
+import adapter from '@sveltejs/adapter-netlify';
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	kit: {
+		adapter: adapter({
+			edge: false,
+			split: false
+		}),
+	}
+};
 
-# create a new project in my-app
-npm create svelte@latest my-app
+export default config;
 ```
 
-## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
