@@ -1,0 +1,107 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js"
+  },
+  "_index.js": {
+    "file": "chunks/index.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "dynamicImports": [
+      "src/hooks.server.ts"
+    ]
+  },
+  "_runtime.js": {
+    "file": "chunks/runtime.js",
+    "imports": [
+      "_index.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_exports.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js",
+      "_exports.js",
+      "_index.js"
+    ]
+  },
+  "src/hooks.server.ts": {
+    "file": "chunks/hooks.server.js",
+    "src": "src/hooks.server.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_runtime.js"
+    ]
+  },
+  "src/lib/i18n/locales/en.json": {
+    "file": "chunks/en.js",
+    "src": "src/lib/i18n/locales/en.json",
+    "isDynamicEntry": true
+  },
+  "src/lib/i18n/locales/pt.json": {
+    "file": "chunks/pt.js",
+    "src": "src/lib/i18n/locales/pt.json",
+    "isDynamicEntry": true
+  },
+  "src/routes/+layout.svelte": {
+    "file": "entries/pages/_layout.svelte.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_runtime.js"
+    ],
+    "dynamicImports": [
+      "src/lib/i18n/locales/en.json",
+      "src/lib/i18n/locales/pt.json"
+    ],
+    "css": [
+      "_app/immutable/assets/_layout.BS4jUFSE.css"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js",
+      "_runtime.js"
+    ]
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "entries/pages/about/_page.svelte.js",
+    "src": "src/routes/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_ssr.js"
+    ]
+  }
+}
