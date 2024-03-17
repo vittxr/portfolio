@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
     import { _ } from 'svelte-i18n'
     import { locale } from 'svelte-i18n'
-
-    const changeLang = (e) => {
-        locale.set(e.target.value)
+   
+    const changeLang = (e: { currentTarget: HTMLSelectElement}) => {
+        locale.set(e.currentTarget.value)
     }
 </script>
 
