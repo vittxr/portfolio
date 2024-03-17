@@ -1,5 +1,5 @@
 <script>
-    import Header from './common/Header.svelte';
+    import Header from '$routes/common/Header/index.svelte';
     import { _ } from 'svelte-i18n'
 </script>
 
