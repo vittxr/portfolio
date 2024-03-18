@@ -4,5 +4,10 @@
         "en": "English",
         "es": "Spanish",
         "pt": "Portuguese"
+    },
+    "theme": {
+        "toggle": "Toggle theme",
+        "light": "light",
+        "dark": "dark"
     }
 }

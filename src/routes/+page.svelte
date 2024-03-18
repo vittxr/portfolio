@@ -7,7 +7,7 @@
   <title>VS - Vitor Schirmer</title>
 </svelte:head>
 
-<div class="w-screen h-screen dark:bg-black">
+<div class="w-screen h-screen dark:bg-gray-950">
     <div class="w-5/6 mx-auto py-10">
         <Header />
         <main class="flex flex-col justify-center items-center">
