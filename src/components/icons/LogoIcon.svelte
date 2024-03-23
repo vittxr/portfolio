@@ -11,13 +11,8 @@
   height="935"
   viewBox="0 0 1500 935"
   ><g transform="matrix(1,0,0,1,-0.9090909090909918,0.3785425101214628)"
-    ><svg
-      viewBox="0 0 396 247"
-      data-background-color="#4f46e5"
-      preserveAspectRatio="xMidYMid meet"
-      ><g
-        id="tight-bounds"
-        transform="matrix(1,0,0,1,0.2400000000000091,-0.09999999999999432)"
+    ><svg viewBox="0 0 396 247" data-background-color="#4f46e5" preserveAspectRatio="xMidYMid meet"
+      ><g id="tight-bounds" transform="matrix(1,0,0,1,0.2400000000000091,-0.09999999999999432)"
         ><svg viewBox="0 0 395.52 247.2" height="247.2" width="395.52"
           ><g><svg></svg></g><g
             ><svg viewBox="0 0 395.52 247.2" height="247.2" width="395.52"
@@ -113,12 +108,7 @@
               ></path></svg
             ></g
           ><defs></defs></svg
-        ><rect
-          width="395.52"
-          height="247.2"
-          fill="none"
-          stroke="none"
-          visibility="hidden"
+        ><rect width="395.52" height="247.2" fill="none" stroke="none" visibility="hidden"
         ></rect></g
       ></svg
     ></g

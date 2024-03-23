@@ -1,9 +1,10 @@
 <script lang="ts">
   import Select from '$components/Select.svelte';
+  import BrazilFlagIcon from '$components/icons/flags/BrFlagIcon.svelte';
+  import UsFlagIcon from '$components/icons/flags/UsFlagIcon.svelte';
   import { _ } from 'svelte-i18n';
   import { locale } from 'svelte-i18n';
 
-  console.log('locale', $locale);
   const changeLang = (value: string) => {
     locale.set(value);
   };
@@ -14,16 +15,17 @@
     options={[
       {
         label: $_('lang_options.en'),
-        value: 'en',
-        icon: null,
+        value: 'en-US',
+        icon: UsFlagIcon,
       },
       {
         label: $_('lang_options.pt'),
-        value: 'pt',
-        icon: null,
+        value: 'pt-BR',
+        icon: BrazilFlagIcon,
       },
     ]}
     selectedOption={$locale || 'pt'}
     onChange={changeLang}
+    className="w-40"
   />
 </div>
