@@ -1,13 +1,13 @@
 {
-    "role": "Fullstack Developer",
-    "lang_options": {
-        "en": "English",
-        "es": "Spanish",
-        "pt": "Portuguese"
-    },
-    "theme": {
-        "toggle": "Toggle theme",
-        "light": "light",
-        "dark": "dark"
-    }
+  "role": "Fullstack Developer",
+  "lang_options": {
+    "en": "English",
+    "es": "Spanish",
+    "pt": "Portuguese"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "light",
+    "dark": "dark"
+  }
 }

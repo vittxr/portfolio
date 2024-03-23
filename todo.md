@@ -1,11 +1,13 @@
 # Todo
 
-- [ ] setup eslint
-- [ ] improve the lang-select element design
+- [ ] work expierence section:
+  - [ ] add a timeline
 
 # Doing
 
+- [ ] setup eslint
 - [ ] add text-skeleton when loading the i18n texts.
+- [ ] improve the lang-select element design
 
 # Done
 

@@ -3,10 +3,10 @@ import { defineConfig } from 'vite';
 // import path from 'path';
 
 export default defineConfig({
-	plugins: [sveltekit()],
-	// resolve: {
-    //     alias: {
-    //         src: path.resolve('src/'),
-    //     },
-    // }
+  plugins: [sveltekit()],
+  // resolve: {
+  //     alias: {
+  //         src: path.resolve('src/'),
+  //     },
+  // }
 });
