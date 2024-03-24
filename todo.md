@@ -1,11 +1,12 @@
 # Todo
 
-- [ ] about me section
 - [ ] contact section
+- [ ] add text-skeleton when loading the i18n texts.
 
 # Doing
 
-- [ ] add text-skeleton when loading the i18n texts.
+
+- [ ] about me section
 - [ ] experience section:
   - [ ] add a timeline
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   import CalendarIcon from '$components/icons/CalendarIcon.svelte';
 
+  export let initialIcon: any;
   export let items: Array<{ title: string; content: string; date?: string; icon: any }>;
   export let className: Partial<{
     thread: string;
@@ -11,6 +12,14 @@
 <div class="py-6 flex flex-col justify-center sm:py-12">
   <div class="py-3 w-full px-2 sm:px-0">
     <div class="relative text-gray-700 antialiased text-sm font-semibold">
+      {#if initialIcon}
+        <div
+          class="rounded-full bg-indigo-500 border-indigo-500 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center z-10"
+        >
+          <svelte:component this={initialIcon} className="text-white" />
+        </div>
+      {/if}
+
       <div
         class="hidden sm:block w-1 bg-indigo-700 absolute h-full left-1/2 transform -translate-x-1/2 {className?.thread}"
       ></div>
@@ -35,7 +44,7 @@
               </div>
             </div>
             <div
-              class="rounded-full bg-indigo-500 border-indigo-500 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center"
+              class="rounded-full bg-indigo-500 border-indigo-500 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center z-10"
             >
               <svelte:component this={item.icon} className="text-white" />
             </div>

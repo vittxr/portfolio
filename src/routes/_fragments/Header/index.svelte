@@ -1,7 +1,7 @@
 <script>
   import LogoIcon from '$components/icons/LogoIcon.svelte';
-  import ThemeButton from '$routes/common/Header/ThemeButton.svelte';
-  import LangDropdown from '$routes/common/Header/LangDropdown.svelte';
+  import ThemeButton from '$routes/_fragments/Header/ThemeButton.svelte';
+  import LangDropdown from '$routes/_fragments/Header/LangDropdown.svelte';
 </script>
 
 <header class="flex justify-between">
