@@ -7,7 +7,7 @@
 <header class="flex justify-between">
   <div>
     <a href="/">
-      <LogoIcon className="text-black dark:text-white" />
+      <LogoIcon />
     </a>
   </div>
   <div class="flex items-center space-x-4">

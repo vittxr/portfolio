@@ -16,9 +16,7 @@
     secondOptionNotEnabled: 'opacity-0 ease-out duration-100',
   };
 
-  function onClick(
-    e: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement },
-  ) {
+  function onClick(e: MouseEvent & { currentTarget: EventTarget & HTMLButtonElement }) {
     enabled = !enabled;
 
     onSwitch();

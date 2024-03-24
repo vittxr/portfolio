@@ -6,7 +6,7 @@
 </script>
 
 <div class="mt-10 w-full">
-  <h3 class="text-black dark:text-white text-2xl font-bold">
+  <h3 class="text-2xl font-bold">
     {$_('work_section.title')}
   </h3>
   <Timeline

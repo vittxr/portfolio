@@ -20,9 +20,7 @@
 </script>
 
 <div>
-  <div
-    class="mt-1 relative border-0 text-black dark:text-white bg-white dark:bg-gray-700 border-gray-300 {className}"
-  >
+  <div class="mt-1 relative border-0 bg-white dark:bg-gray-700 border-gray-300 {className}">
     <button
       type="button"
       class="relative w-full text-inherit bg-inherit border-inherit rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"

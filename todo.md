@@ -6,7 +6,7 @@
 # Doing
 
 
-- [ ] about me section
+- [ ] hero section
 - [ ] experience section:
   - [ ] add a timeline
 
