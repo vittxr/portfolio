@@ -8,3 +8,4 @@ The list is arranged in ascending order, with the most liked portfolio at the to
 6. https://www.agney.dev
 7. https://dunks1980.com
 8. https://bruno-simon.com
+9. https://devstory.fyi
