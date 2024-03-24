@@ -1,4 +1,7 @@
 {
+  "images_alt": {
+    "profile": "Profile picture"
+  },
   "role": "Fullstack Developer",
   "lang_options": {
     "en": "English",
@@ -9,6 +12,9 @@
     "toggle": "Toggle theme",
     "light": "light",
     "dark": "dark"
+  },
+  "hero_section": {
+    "description": "I am a Fullstack Developer, interested to learn about everything."
   },
   "work_section": {
     "title": "Work Experience",
