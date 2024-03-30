@@ -20,7 +20,7 @@
       <!-- Projects section -->
 
       <!-- Work experience section -->
-      <JobsExperience />
+      <!-- <JobsExperience /> -->
     </main>
   </div>
 </div>

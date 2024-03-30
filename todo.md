@@ -1,15 +1,19 @@
 # Todo
 
 - [ ] contact section
+- [ ] about section
+- [ ] projects section 
+- [ ] blog section
+- [ ] degree section
 - [ ] add text-skeleton when loading the i18n texts.
 
 # Doing
 
-
 - [ ] hero section
-- [ ] experience section:
-  - [ ] add a timeline
-
+  - [ ] add button to download cv
+- [ ] job experience section
+- [ ] navbar to navigate through the sections
+  
 
 # Done
 

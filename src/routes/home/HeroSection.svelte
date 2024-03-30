@@ -1,4 +1,5 @@
 <script>
+  import DownloadButton from '$components/buttons/DownloadButton.svelte';
   import GithubIcon from '$components/icons/GithubIcon.svelte';
   import InstagramIcon from '$components/icons/InstagramIcon.svelte';
   import LinkedinIcon from '$components/icons/LinkedinIcon.svelte';
@@ -19,6 +20,12 @@
       <p>
         {$_('hero_section.description')}
       </p>
+
+      <DownloadButton className="mt-2">
+        <span>
+          {$_('hero_section.download_cv')}
+        </span>
+      </DownloadButton>
 
       <div class="py-4 flex space-x-2">
         <a href="https://github.com/vittxr" target="_blank">
