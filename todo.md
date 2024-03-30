@@ -13,8 +13,9 @@
   - [ ] add button to download cv
 - [ ] job experience section
 - [ ] navbar to navigate through the sections
-  
 
+- [ ] LangDropdown: close it when focus is lost.
+   
 # Done
 
 - [x] add a button to toggle the language.
@@ -22,3 +23,6 @@
 - [x] add a switch to toggle the theme
 - [x] setup eslint and prettier
 - [x] improve the lang-select element design
+- [x] LangDropdown responsiveness:
+  - [x] mobile 
+  - [x] desktop

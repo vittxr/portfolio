@@ -12,6 +12,7 @@
 
 <div>
   <Select
+    id="lang-dropdown"
     options={[
       {
         label: $_('lang_options.en'),
@@ -26,6 +27,5 @@
     ]}
     selectedOption={$locale || 'pt'}
     onChange={changeLang}
-    className="w-40"
   />
 </div>
