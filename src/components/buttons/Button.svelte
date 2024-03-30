@@ -1,7 +1,6 @@
 <script lang="ts">
   type Animation = {
     hover?: 'invert-colors' | 'bg-transparent';
-    click?: string;
   };
 
   export let className: string = '';

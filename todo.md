@@ -9,10 +9,10 @@
 
 # Doing
 
-- [ ] hero section
+- [ ] add hero section
   - [ ] add button to download cv
-- [ ] job experience section
-- [ ] navbar to navigate through the sections
+- [ ] add job experience section
+- [ ] add navbar to navigate through the sections
 
    
 # Done
