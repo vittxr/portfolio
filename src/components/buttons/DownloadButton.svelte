@@ -6,8 +6,9 @@
 </script>
 
 <Button
+  {className}
   animation={{
-    hover: 'invert-colors',
+    hover: 'bg-transparent',
   }}
 >
   <slot />
