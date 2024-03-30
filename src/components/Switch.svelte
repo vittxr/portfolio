@@ -44,7 +44,7 @@
         : classNames.firstOptionNotEnabled} absolute inset-0 h-full w-full flex items-center justify-center transition-opacity"
       aria-hidden="true"
     >
-      <svelte:component this={icons.enabled} class="w-5 h-5" />
+      <svelte:component this={icons.enabled} className="text-black" />
     </span>
 
     <span
@@ -53,7 +53,7 @@
         : classNames.secondOptionNotEnabled} opacity-0 ease-out duration-100 absolute inset-0 h-full w-full flex items-center justify-center transition-opacity"
       aria-hidden="true"
     >
-      <svelte:component this={icons.disabled} class="w-6 h-6" />
+      <svelte:component this={icons.disabled} className="text-black" />
     </span>
   </span>
 </button>
