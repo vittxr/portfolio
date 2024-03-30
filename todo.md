@@ -14,7 +14,6 @@
 - [ ] job experience section
 - [ ] navbar to navigate through the sections
 
-- [ ] LangDropdown: close it when focus is lost.
    
 # Done
 
@@ -26,3 +25,4 @@
 - [x] LangDropdown responsiveness:
   - [x] mobile 
   - [x] desktop
+- [x] LangDropdown: close it when focus is lost.
