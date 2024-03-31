@@ -10,7 +10,7 @@
 </svelte:head>
 
 <div class="w-screen h-screen overflow-auto dark:bg-gray-950 text-black dark:text-white">
-  <div class="w-5/6 mx-auto py-10">
+  <div class="w-5/6 mx-auto py-10 relative">
     <Header />
 
     <main class="flex flex-col">

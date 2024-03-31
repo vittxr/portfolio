@@ -7,9 +7,9 @@
 
 <header class="flex justify-between">
   <div class="flex items-center">
-    <a href="/">
+    <!-- <a href="/">
       <LogoIcon />
-    </a>
+    </a> -->
     <Navbar />
   </div>
   <div class="flex items-center space-x-4">
