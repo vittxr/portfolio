@@ -6,17 +6,18 @@
   import { _ } from 'svelte-i18n';
 </script>
 
-<div class="sm:flex mt-10 items-center">
-  <div class="w-32 h-full mb-4 flex-shrink-0 sm:mb-0 sm:mr-4">
+<div class="sm:flex mt-10 items absolute top-[50%] translate-y-[-50%]">
+  <div class="w-32 h-32 mb-4 flex-shrink-0 sm:mb-0 sm:mr-4 mx-auto">
     <img src="imgs/pfp.jpg" alt={$_('images_alt.profile')} class="w-full h-full rounded-full" />
   </div>
-  <div>
+
+  <div class="flex flex-col items-center sm:items-start">
     <h4 class="text-lg font-bold">Vitor Schirmer</h4>
     <p class="mt-1">
       {$_('role')}
     </p>
 
-    <div class="mt-2">
+    <div class="mt-2 flex flex-col items-center sm:items-start text-center sm:text-left">
       <p>
         {$_('hero_section.description')}
       </p>
