@@ -6,13 +6,12 @@
 - [ ] blog section
 - [ ] degree section
 - [ ] add text-skeleton when loading the i18n texts.
+- [ ] add job experience section
+- [ ] add navbar to navigate through the sections
 
 # Doing
 
-- [ ] add hero section
-  - [ ] add button to download cv
-- [ ] add job experience section
-- [ ] add navbar to navigate through the sections
+[ ] mobile navbar animation
 
    
 # Done
@@ -26,3 +25,5 @@
   - [x] mobile 
   - [x] desktop
 - [x] LangDropdown: close it when focus is lost.
+- [x] add hero section
+  - [x] add button to download cv 
