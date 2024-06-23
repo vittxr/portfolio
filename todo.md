@@ -8,10 +8,9 @@
 - [ ] add text-skeleton when loading the i18n texts.
 - [ ] add job experience section
 - [ ] add navbar to navigate through the sections
+- [ ] add resume for pt-br and english.
 
 # Doing
-
-[ ] mobile navbar animation
 
    
 # Done
