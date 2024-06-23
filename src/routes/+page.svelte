@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>vitxr</title>
+  <title>vschirmer</title>
 </svelte:head>
 
 <div class="w-screen h-screen overflow-auto dark:bg-gray-950 text-black dark:text-white">
