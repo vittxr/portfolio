@@ -6,6 +6,17 @@
   import { _ } from 'svelte-i18n';
 
   export let className: string = '';
+
+  async function downloadResume(): Promise<void> {
+    const res = await fetch('static/resume.pdf');
+    console.log('res  ', res);
+    const blob = await res.blob();
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'vitor_schirmer.pdf';
+    a.click();
+  }
 </script>
 
 <div class="sm:flex items {className}">
@@ -24,7 +35,7 @@
         {$_('hero_section.description')}
       </p>
 
-      <DownloadButton className="mt-2">
+      <DownloadButton className="mt-2" onClick={downloadResume}>
         <span>
           {$_('hero_section.download_cv')}
         </span>

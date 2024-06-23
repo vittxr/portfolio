@@ -1,12 +1,14 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
-// import path from 'path';
+import { defineConfig, searchForWorkspaceRoot } from 'vite';
 
 export default defineConfig({
   plugins: [sveltekit()],
-  // resolve: {
-  //     alias: {
-  //         src: path.resolve('src/'),
-  //     },
-  // }
+  server: {
+    fs: {
+      allow: [
+        searchForWorkspaceRoot(process.cwd()),
+        '/static',
+      ],
+    },
+  },
 });
