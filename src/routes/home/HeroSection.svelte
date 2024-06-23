@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
   import DownloadButton from '$components/buttons/DownloadButton.svelte';
   import GithubIcon from '$components/icons/GithubIcon.svelte';
   import InstagramIcon from '$components/icons/InstagramIcon.svelte';
   import LinkedinIcon from '$components/icons/LinkedinIcon.svelte';
   import { _ } from 'svelte-i18n';
+
+  export let className: string = '';
 </script>
 
-<div class="sm:flex mt-10 items absolute top-[50%] translate-y-[-50%]">
+<div class="sm:flex items {className}">
   <div class="w-32 h-32 mb-4 flex-shrink-0 sm:mb-0 sm:mr-4 mx-auto">
     <img src="imgs/pfp.jpg" alt={$_('images_alt.profile')} class="w-full h-full rounded-full" />
   </div>

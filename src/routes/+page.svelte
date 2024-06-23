@@ -1,26 +1,9 @@
 <script>
-  import { _ } from 'svelte-i18n';
-  import Header from '$routes/_fragments/Header/index.svelte';
-  import JobsExperience from '$routes/home/JobsExperience.svelte';
-  import HeroSection from '$routes/home/HeroSection.svelte';
+  import { goto } from '$app/navigation';
+  import { onMount } from 'svelte';
+
+  // Redirect to /home when the component is mounted
+  onMount(() => {
+    goto('/home');
+  });
 </script>
-
-<svelte:head>
-  <title>vschirmer</title>
-</svelte:head>
-
-<div class="w-screen h-screen overflow-auto dark:bg-gray-950 text-black dark:text-white">
-  <div id="root" class="w-5/6 mx-auto py-10 relative h-full">
-    <Header />
-
-    <main class="flex flex-col h-full relative">
-      <!-- Hero section -->
-      <HeroSection />
-
-      <!-- Projects section -->
-
-      <!-- Work experience section -->
-      <!-- <JobsExperience /> -->
-    </main>
-  </div>
-</div>
