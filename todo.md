@@ -7,7 +7,6 @@
 - [ ] degree section
 - [ ] add text-skeleton when loading the i18n texts.
 - [ ] add job experience section
-- [ ] add navbar to navigate through the sections
 - [ ] add resume for all supported languages: pt-br and en-us.
 
 # Doing
@@ -26,3 +25,4 @@
 - [x] LangDropdown: close it when focus is lost.
 - [x] add hero section
   - [x] add button to download cv 
+- [x] add navbar to navigate through the sections

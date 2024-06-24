@@ -8,8 +8,7 @@
   export let className: string = '';
 
   async function downloadResume(): Promise<void> {
-    const res = await fetch('static/resume.pdf');
-    console.log('res  ', res);
+    const res = await fetch('static/resume_pt_br.pdf');
     const blob = await res.blob();
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
