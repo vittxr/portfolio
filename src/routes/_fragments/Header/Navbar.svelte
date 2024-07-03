@@ -70,6 +70,5 @@
     <Link href="/" animation={{ hover: 'underline-right-to-left' }}>Home</Link>
     <Link href="/about" animation={{ hover: 'underline-right-to-left' }}>About</Link>
     <Link href="/projects" animation={{ hover: 'underline-right-to-left' }}>Projects</Link>
-    <Link href="/jobs" animation={{ hover: 'underline-right-to-left' }}>Jobs</Link>
   </div>
 </nav>
