@@ -9,5 +9,5 @@
 </svelte:head>
 
 <Base>
-  <HeroSection className="h-full mt-20" />
+  <HeroSection className="h-full" />
 </Base>
