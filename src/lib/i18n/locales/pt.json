@@ -15,24 +15,27 @@
   },
   "hero_section": {
     "description": "Experiente no desenvolvimento ponta-a-ponta de aplicações.",
-    "download_cv": "Baixar CV",
     "read_more_about_me": "Leia mais sobre mim"
   },
-  "work_section": {
-    "title": "Work Experience",
-    "jobs": [
-      {
-        "company": "Farmpro",
-        "role": "Fullstack Developer",
-        "date": "2022 - Present",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
-      },
-      {
-        "company": "Workana",
-        "role": "Freelancer Web Developer",
-        "date": "2022 - 2023",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
-      }
-    ]
+  "about": {
+    "resume": "Resume",
+    "description": "",
+    "work_section": {
+      "title": "Work Experience",
+      "jobs": [
+        {
+          "company": "Farmpro",
+          "role": "Fullstack Developer",
+          "date": "2022 - Present",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
+        },
+        {
+          "company": "Workana",
+          "role": "Freelancer Web Developer",
+          "date": "2022 - 2023",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
+        }
+      ]
+    }
   }
 }

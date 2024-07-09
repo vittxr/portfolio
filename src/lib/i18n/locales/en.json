@@ -15,24 +15,27 @@
   },
   "hero_section": {
     "description": "Experienced in end-to-end application development.",
-    "download_cv": "Download CV",
     "read_more_about_me": "Read more about me"
   },
-  "work_section": {
-    "title": "Work Experience",
-    "jobs": [
-      {
-        "company": "Farmpro",
-        "role": "Fullstack Developer",
-        "date": "2022 - Present",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
-      },
-      {
-        "company": "Workana",
-        "role": "Freelancer Web Developer",
-        "date": "2022 - 2023",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
-      }
-    ]
+  "about": {
+    "resume": "Currículo",
+    "description": "",
+    "work_section": {
+      "title": "Work Experience",
+      "jobs": [
+        {
+          "company": "Farmpro",
+          "role": "Fullstack Developer",
+          "date": "2022 - Present",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
+        },
+        {
+          "company": "Workana",
+          "role": "Freelancer Web Developer",
+          "date": "2022 - 2023",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
+        }
+      ]
+    }
   }
 }
