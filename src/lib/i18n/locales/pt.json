@@ -14,8 +14,9 @@
     "dark": "Escuro"
   },
   "hero_section": {
-    "description": "Conectando a lacuna entre design e funcionalidade. Experiente tanto em desenvolvimento front-end quanto back-end, crio experiências web centradas no usuário com tecnologias de ponta.",
-    "download_cv": "Baixar CV"
+    "description": "Experiente no desenvolvimento ponta-a-ponta de aplicações.",
+    "download_cv": "Baixar CV",
+    "read_more_about_me": "Leia mais sobre mim"
   },
   "work_section": {
     "title": "Work Experience",

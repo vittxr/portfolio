@@ -14,8 +14,9 @@
     "dark": "dark"
   },
   "hero_section": {
-    "description": "Bridging the gap between design and functionality. Adept in both front-end and back-end development, I craft user-centric web experiences with cutting-edge technologies.",
-    "download_cv": "Download CV"
+    "description": "Experienced in end-to-end application development.",
+    "download_cv": "Download CV",
+    "read_more_about_me": "Read more about me"
   },
   "work_section": {
     "title": "Work Experience",
