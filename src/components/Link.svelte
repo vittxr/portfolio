@@ -5,8 +5,8 @@
 
   export let href: string;
   export let animation: Animation = {};
-  export let classname: string;
-  export const animationClasses: { [key: string]: string } = {
+  export let classname: string = '';
+  const animationClasses: { [key: string]: string } = {
     'underline-inside-out':
       'before:bg-white before:absolute before:h-0.5 before:w-full before:bottom-0 before:left-0 before:margin-y-[-5px] before:scale-x-0 hover:before:scale-x-100 before:transition-all before:duration-300',
     'underline-right-to-left':
