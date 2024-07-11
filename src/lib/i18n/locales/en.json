@@ -18,21 +18,17 @@
     "read_more_about_me": "Read more about me"
   },
   "about": {
-    "resume": "Currículo",
+    "resume": "Resume",
     "description": "",
-    "work_section": {
-      "title": "Work Experience",
-      "jobs": [
+    "timeline": {
+      "title": "Timeline",
+      "items": [
         {
-          "company": "Farmpro",
-          "role": "Fullstack Developer",
-          "date": "2022 - Present",
+          "year": "2024",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
         },
         {
-          "company": "Workana",
-          "role": "Freelancer Web Developer",
-          "date": "2022 - 2023",
+          "year": "2023",
           "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
         }
       ]

@@ -18,11 +18,11 @@
     "read_more_about_me": "Leia mais sobre mim"
   },
   "about": {
-    "resume": "Resume",
+    "resume": "Currículo",
     "description": "",
-    "work_section": {
-      "title": "Work Experience",
-      "jobs": [
+    "timeline": {
+      "title": "Linha do tempo",
+      "items": [
         {
           "company": "Farmpro",
           "role": "Fullstack Developer",
