@@ -5,8 +5,7 @@
   import { _ } from 'svelte-i18n';
 </script>
 
-<div class="mt-2 w-full">
-  s
+<div class="mt-10 w-full">
   <h3 class="text-2xl font-bold">
     {$_('about.timeline.title')}
   </h3>
@@ -18,7 +17,11 @@
           <CalendarIcon className="h-8 w-8 text-gray-500 inline-block mr-1" />
         </div>
 
-        <div>{item.description}</div>
+        <ul class="mt-2">
+          {#each item.description as item}
+            <li>{item}</li>
+          {/each}
+        </ul>
       </TimelineItem>
     {/each}
   </Timeline>
