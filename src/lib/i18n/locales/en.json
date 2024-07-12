@@ -25,11 +25,18 @@
       "items": [
         {
           "year": "2024",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
+          "description": [
+            "Work",
+            "Learned docker",
+            "aaa"
+          ]
         },
         {
           "year": "2023",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc lacinia aliquet. Nullam nec nunc nec libero ultricies tincidunt. Nullam nec nunc nec libero ultricies tincidunt."
+          "description": [
+            "Learned cross-app development with Expo and React Native",
+            "aka"
+          ]
         }
       ]
     }
