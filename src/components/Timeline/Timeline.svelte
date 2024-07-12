@@ -7,8 +7,8 @@
   }> = {};
 </script>
 
-<div class="py-2 flex flex-col justify-center sm:py-4">
-  <div class="py-3 w-full px-2 sm:px-0">
+<div class="py-2 flex flex-col justify-center">
+  <div class="w-full px-2 sm:px-0">
     <div class="relative text-gray-700 antialiased text-sm font-semibold">
       {#if initialIcon}
         <div
