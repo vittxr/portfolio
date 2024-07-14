@@ -26,16 +26,48 @@
         {
           "year": "2024",
           "items": [
-            "Work",
-            "Learned docker",
-            "aaa"
+            "Learned Firebase",
+            "Learned NoSQL databases",
+            "Learned GCP APIs: DocumentAI",
+            "Learned Docker"
           ]
         },
         {
           "year": "2023",
           "items": [
-            "Learned cross-app development with Expo and React Native",
-            "aka"
+            "Start graduation studies in Computer Systems Analyst in UTP university",
+            "Learned GCP and Digital Ocean",
+            "Learned Typescript",
+            "Learned cross-platform mobile development with React Native and Expo",
+            "Learned the development of Rest APIs with FastAPI",
+            "Learned how to deploy applications in VMs",
+            "Learned GCP APIs: Google Drive and Google Spread Sheets"
+          ]
+        },
+        {
+          "year": "2022",
+          "items": [
+            "Learned Flask and NodeJS",
+            "Learned SQL databases with MySQL/MariaDB",
+            "Learned Bootstrap, Tailwind and ReactJS",
+            "Learned how to deploy production apps with Heroku and Vercel",
+            "Started todo freelance jobs",
+            "Started a job as fullstack developer in Farmpro"
+          ]
+        },
+        {
+          "year": "2021",
+          "items": [
+            "Learned Python",
+            "Learned <a href='https://git-scm.com'>Git</a> and <a href='https://github.com'>GitHub</a>",
+            "Started a course of the government of my country to dig in the development of web applications",
+            "Did my first remunerated job using python: solve university exercises."
+          ]
+        },
+        {
+          "year": "2020",
+          "items": [
+            "Learned the basics of HTML, CSS and JavaScript"
           ]
         }
       ]
