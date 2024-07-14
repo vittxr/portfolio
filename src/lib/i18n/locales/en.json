@@ -25,7 +25,7 @@
       "items": [
         {
           "year": "2024",
-          "description": [
+          "items": [
             "Work",
             "Learned docker",
             "aaa"
@@ -33,7 +33,7 @@
         },
         {
           "year": "2023",
-          "description": [
+          "items": [
             "Learned cross-app development with Expo and React Native",
             "aka"
           ]
