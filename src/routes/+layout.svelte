@@ -3,6 +3,7 @@
   import { browser } from '$app/environment';
   import '$lib/i18n';
   import { locale, waitLocale, isLoading } from 'svelte-i18n';
+  import Base from './_fragments/Base.svelte';
 
   export const load = async () => {
     if (browser) {
@@ -10,11 +11,12 @@
     }
     await waitLocale();
   };
-  console.log('isLoading', $isLoading);
 </script>
 
 {#if $isLoading}
   Please wait...
 {:else}
-  <slot />
+  <Base>
+    <slot />
+  </Base>
 {/if}

@@ -10,8 +10,10 @@
 </script>
 
 <div class="h-full sm:flex items-center {className}">
-  <div class="w-full h-full pb-10 flex flex-col items-center sm:items-start justify-center">
-    <h1 class="text-7xl font-bold">Vitor Schirmer</h1>
+  <div
+    class="w-full h-full space-y-2 pb-10 flex flex-col items-center sm:items-start justify-center"
+  >
+    <h1 class="text-7xl font-bold text-center sm:text-left">Vitor Schirmer</h1>
     <h2 class="mt-1 text-4xl">
       {$_('role')}
     </h2>
@@ -21,17 +23,17 @@
         {$_('hero_section.description')}
       </h3>
 
-      <div class="w-full flex justify-between">
+      <div class="w-full flex justify-between items-center">
         <Link
           href="/about"
           classname="mt-2 flex items-center text-lg font-medium"
-          animation={{ hover: 'underline-right-to-left' }}
+          animation={{ hover: 'underline-left-to-right' }}
         >
           {$_('hero_section.read_more_about_me')}
           <ArrowUpRight className="ml-1" />
         </Link>
 
-        <div class="py-4 flex space-x-2">
+        <div class="flex space-x-2">
           <a href="https://github.com/vschirmer" target="_blank">
             <GithubIcon className="w-6 h-6" />
           </a>

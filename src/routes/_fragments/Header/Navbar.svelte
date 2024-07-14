@@ -51,10 +51,10 @@
 
     <div class="mt-5 flex-1 h-0 overflow-y-auto ml-4">
       <nav class="px-2 space-y-4 flex flex-col">
-        <Link href="/" animation={{ hover: 'underline-right-to-left' }}>Home</Link>
-        <Link href="/about" animation={{ hover: 'underline-right-to-left' }}>About</Link>
-        <Link href="/projects" animation={{ hover: 'underline-right-to-left' }}>Projects</Link>
-        <Link href="/jobs" animation={{ hover: 'underline-right-to-left' }}>Jobs</Link>
+        <Link href="/" animation={{ hover: 'underline-left-to-right' }}>Home</Link>
+        <Link href="/about" animation={{ hover: 'underline-left-to-right' }}>About</Link>
+        <Link href="/projects" animation={{ hover: 'underline-left-to-right' }}>Projects</Link>
+        <Link href="/jobs" animation={{ hover: 'underline-left-to-right' }}>Jobs</Link>
       </nav>
     </div>
   </div>
@@ -67,8 +67,8 @@
 <!-- Desktop navbar -->
 <nav class="hidden sm:block">
   <div class="flex space-x-6">
-    <Link href="/" animation={{ hover: 'underline-right-to-left' }}>Home</Link>
-    <Link href="/about" animation={{ hover: 'underline-right-to-left' }}>About</Link>
-    <Link href="/projects" animation={{ hover: 'underline-right-to-left' }}>Projects</Link>
+    <Link href="/" animation={{ hover: 'underline-left-to-right' }}>Home</Link>
+    <Link href="/about" animation={{ hover: 'underline-left-to-right' }}>About</Link>
+    <Link href="/projects" animation={{ hover: 'underline-left-to-right' }}>Projects</Link>
   </div>
 </nav>

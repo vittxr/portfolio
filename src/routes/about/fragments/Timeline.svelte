@@ -2,7 +2,6 @@
   import { Timeline, TimelineItem } from '$components/Timeline';
   import type { TimelineItemType } from '$lib/types/i18n';
   import CalendarIcon from '$components/icons/CalendarIcon.svelte';
-  import SuitcaseIcon from '$components/icons/SuitcaseIcon.svelte';
   import { _ } from 'svelte-i18n';
 
   const timelineItems: TimelineItemType[] = $_(
@@ -16,15 +15,14 @@
   </h3>
   <Timeline initialIcon={CalendarIcon}>
     {#each timelineItems as { year, items }}
-      <TimelineItem idx={year} icon={SuitcaseIcon}>
+      <TimelineItem idx={year} icon={CalendarIcon}>
         <div class="flex items-center justify-between text-2xl">
           <h5>{year}</h5>
-          <CalendarIcon className="h-8 w-8 text-gray-500 inline-block mr-1" />
         </div>
 
-        <ul class="mt-2">
+        <ul class="mt-2 pl-4 list-disc">
           {#each items as item}
-            <li>{item}</li>
+            <li>{@html item}</li>
           {/each}
         </ul>
       </TimelineItem>
