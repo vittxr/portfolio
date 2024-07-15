@@ -7,10 +7,10 @@
 </script>
 
 <div class="pt-10">
-  <div class="flex justify-between items-center">
-    <div>
+  <div class="flex flex-col-reverse sm:flex-row justify-between items-center">
+    <div class="flex flex-col items-center sm:items-start">
       <h1 class="text-4xl font-bold">Vitor Schirmer</h1>
-      <h2 class="text-xl font-medium">
+      <h2 class="text-md">
         Software Developer at
         <b>FARMPRO</b>
       </h2>
@@ -24,7 +24,7 @@
     <Picture />
   </div>
 
-  <p class="mt-2">
+  <p class="mt-5 text-center sm:text-left">
     I'm a software engineer with a passion for web development. I have experience with technologies
     like React, Vue, Svelte, and Node.js. I'm always looking for new challenges and opportunities to
     learn new things.

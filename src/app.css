@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.external-link {
+    @apply text-rose-400;
+    @apply hover:text-rose-500; 
+    @apply transition-colors;
+    @apply duration-200;
+    @apply hover:underline
+}
