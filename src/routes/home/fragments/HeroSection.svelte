@@ -41,10 +41,6 @@
           <a href="https://www.linkedin.com/in/vschirmer/" target="_blank">
             <LinkedinIcon className="w-6 h-6" />
           </a>
-
-          <a href="https://instagram.com/vitxr.me" target="_blank">
-            <InstagramIcon className="w-6 h-6" />
-          </a>
         </div>
       </div>
     </div>
