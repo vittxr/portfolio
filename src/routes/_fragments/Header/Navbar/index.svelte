@@ -3,13 +3,14 @@
   import ThreeBarsIcon from '$components/icons/ThreeBarsIcon.svelte';
   import XIcon from '$components/icons/XIcon.svelte';
   import { onMount } from 'svelte';
+  import Links from './links.svelte';
   let mobileNavbarContainer: HTMLElement | null;
+  let isMobileNavbarOpen = false;
 
   onMount(() => {
     mobileNavbarContainer = document.getElementById('mobile-navbar-container');
   });
 
-  let isMobileNavbarOpen = false;
   async function setIsMobileNavbarOpen(open: boolean) {
     console.log('open', open);
     isMobileNavbarOpen = open;
@@ -51,10 +52,7 @@
 
     <div class="mt-5 flex-1 h-0 overflow-y-auto ml-4">
       <nav class="px-2 space-y-4 flex flex-col">
-        <Link href="/" animation={{ hover: 'underline-left-to-right' }}>Home</Link>
-        <Link href="/about" animation={{ hover: 'underline-left-to-right' }}>About</Link>
-        <Link href="/projects" animation={{ hover: 'underline-left-to-right' }}>Projects</Link>
-        <Link href="/jobs" animation={{ hover: 'underline-left-to-right' }}>Jobs</Link>
+        <Links />
       </nav>
     </div>
   </div>
@@ -67,8 +65,6 @@
 <!-- Desktop navbar -->
 <nav class="hidden sm:block">
   <div class="flex space-x-6">
-    <Link href="/" animation={{ hover: 'underline-left-to-right' }}>Home</Link>
-    <Link href="/about" animation={{ hover: 'underline-left-to-right' }}>About</Link>
-    <Link href="/projects" animation={{ hover: 'underline-left-to-right' }}>Projects</Link>
+    <Links />
   </div>
 </nav>

@@ -8,17 +8,17 @@
   export let classname: string = '';
   const animationClasses: { [key: string]: string } = {
     'underline-inside-out':
-      'before:bg-white before:absolute before:h-0.5 before:w-full before:bottom-0 before:left-0 before:margin-y-[-5px] before:scale-x-0 hover:before:scale-x-100 before:transition-all before:duration-300',
+      'before:bg-white before:absolute before:h-[3px] before:w-full before:bottom-0 before:left-0 before:margin-y-[-5px] before:scale-x-0 hover:before:scale-x-100 before:transition-all before:duration-300',
     'underline-left-to-right':
-      'before:bg-white before:absolute before:h-0.5 before:w-0 before:bottom-0 before:left-0 hover:before:w-full before:transition-all before:duration-300',
+      'before:bg-white before:absolute before:h-[3px] before:w-0 before:bottom-0 before:left-0 hover:before:w-full before:transition-all before:duration-300',
     'underline-right-to-left':
-      'before:bg-white before:absolute before:h-0.5 before:w-0 before:bottom-0 before:right-0 hover:before:w-full before:transition-all before:duration-300',
+      'before:bg-white before:absolute before:h-[3px] before:w-0 before:bottom-0 before:right-0 hover:before:w-full before:transition-all before:duration-300',
   };
 </script>
 
 <a
   {href}
-  class="font-medium relative cursor-pointer {animationClasses[
+  class="font-medium relative cursor-pointer before:bg-red-500 {animationClasses[
     animation?.hover || 'underline-inside-out'
   ]} {classname}"
 >
