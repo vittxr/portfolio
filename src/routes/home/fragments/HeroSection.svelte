@@ -34,7 +34,7 @@
         </Link>
 
         <div class="flex space-x-2">
-          <a href="https://github.com/vschirmer" target="_blank">
+          <a href="https://github.com/vittxr" target="_blank">
             <GithubIcon className="w-6 h-6" />
           </a>
 
