@@ -1,13 +1,14 @@
 <script lang="ts">
   import Header from '$routes/_fragments/Header/index.svelte';
+  import Footer from './Footer.svelte';
 </script>
 
-<div class="w-screen h-screen overflow-auto dark:bg-gray-950 text-black dark:text-white">
-  <div class="w-11/12 mx-auto py-10 relative h-full">
-    <Header />
+<div class="px-10 py-10 min-h-screen flex flex-col dark:bg-gray-950 text-black dark:text-white">
+  <Header />
 
-    <main class="flex flex-col h-full relative">
-      <slot />
-    </main>
-  </div>
+  <main class="flex-grow flex flex-col items-center justify-center">
+    <slot />
+  </main>
+
+  <Footer />
 </div>
