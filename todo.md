@@ -1,6 +1,5 @@
 # Todo
 
-- [ ] contact section
 - [ ] about section
 - [ ] projects section 
 - [ ] blog section
