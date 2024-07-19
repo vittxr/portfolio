@@ -10,22 +10,21 @@
   };
 </script>
 
-<div>
-  <Select
-    id="lang-dropdown"
-    options={[
-      {
-        label: $_('lang_options.en'),
-        value: 'en-US',
-        icon: UsFlagIcon,
-      },
-      {
-        label: $_('lang_options.pt'),
-        value: 'pt-BR',
-        icon: BrazilFlagIcon,
-      },
-    ]}
-    selectedOption={$locale || 'pt'}
-    onChange={changeLang}
-  />
-</div>
+<Select
+  id="lang-dropdown"
+  options={[
+    {
+      // label: $_('lang_options.en'),
+      value: 'en-US',
+      icon: UsFlagIcon,
+    },
+    {
+      // label: $_('lang_options.pt'),
+      value: 'pt-BR',
+      icon: BrazilFlagIcon,
+    },
+  ]}
+  selectedOption={$locale || 'pt'}
+  onChange={changeLang}
+  className=""
+/>
