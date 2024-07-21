@@ -1,15 +1,15 @@
 # Todo
 
-- [ ] about section
-- [ ] projects section 
-- [ ] blog section
-- [ ] degree section
-- [ ] add text-skeleton when loading the i18n texts.
-- [ ] add job experience section
+
+- [ ] projects page 
 - [ ] add resume for all supported languages: pt-br and en-us.
 
 # Doing
 
+- [ ] about page
+  - [ ] add timeline
+  - [ ] add experience
+  - [ ] add graduation 
    
 # Done
 
