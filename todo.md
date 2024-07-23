@@ -1,6 +1,5 @@
 # Todo
 
-
 - [ ] projects page 
 - [ ] add resume for all supported languages: pt-br and en-us.
 

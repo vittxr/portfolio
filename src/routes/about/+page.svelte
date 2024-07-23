@@ -1,9 +1,11 @@
-<script>
+<script lang="ts">
   import { _ } from 'svelte-i18n';
   import Picture from './fragments/Picture.svelte';
   import Link from '$components/Link.svelte';
   import ArrowTopRightOnSquare from '$components/icons/ArrowTopRightOnSquare.svelte';
   import Timeline from './fragments/Timeline.svelte';
+  import Experience from './fragments/Experience.svelte';
+  import Graduation from './fragments/Graduation.svelte';
 </script>
 
 <div class="pt-10">
@@ -30,5 +32,7 @@
     learn new things.
   </p>
 
+  <Experience />
   <Timeline />
+  <Graduation />
 </div>
