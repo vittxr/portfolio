@@ -26,7 +26,7 @@
     <Picture />
   </div>
 
-  <p class="mt-5 text-center sm:text-left">
+  <p class="my-8 text-center sm:text-left">
     I'm a software engineer with a passion for web development. I have experience with technologies
     like React, Vue, Svelte, and Node.js. I'm always looking for new challenges and opportunities to
     learn new things.

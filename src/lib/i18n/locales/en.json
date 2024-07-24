@@ -20,6 +20,27 @@
   "about": {
     "resume": "Resume",
     "description": "",
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "role": "Fullstack Developer",
+          "company": "Farmpro",
+          "start_date": "2022-11-03",
+          "end_date": null,
+          "description": "I work in the development of a web application for the management of agricultural properties.",
+          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, Flask, ReactJS, MySQL, Heroku and Vercel."
+        },
+        {
+          "role": "Freelancer",
+          "company": "Workana",
+          "start_date": "2022-03-20",
+          "end_date": "2022-11-03",
+          "description": "I work in the development of web applications for clients.",
+          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL and Heroku."
+        }
+      ]
+    },
     "timeline": {
       "title": "Timeline",
       "items": [
