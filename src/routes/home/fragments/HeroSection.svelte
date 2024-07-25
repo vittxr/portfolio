@@ -12,7 +12,7 @@
   >
     <h1 class="text-7xl font-bold cursor-scale">Vitor Schirmer</h1>
     <h2 class="text-4xl cursor-scale">
-      {$_('hero_section.description')}
+      {$_('home_page.hero_section.description')}
     </h2>
 
     <div class="w-full mt-2 flex flex-col items-center sm:items-start cursor-scale">
@@ -21,7 +21,7 @@
         classname="group mt-2 flex items-center text-lg font-medium"
         animation={{ hover: 'underline-left-to-right' }}
       >
-        {$_('hero_section.read_more_about_me')}
+        {$_('home_page.hero_section.read_more_about_me')}
         <ArrowRightIcon className="group-hover:w-5 ml-1" />
       </Link>
     </div>

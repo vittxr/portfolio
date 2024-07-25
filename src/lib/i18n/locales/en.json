@@ -1,23 +1,33 @@
 {
-  "images_alt": {
-    "profile": "Profile picture"
+  "utils": {
+    "role": "Fullstack Developer",
+    "lang_options": {
+      "en": "English",
+      "es": "Spanish",
+      "pt": "Portuguese"
+    },
+    "theme": {
+      "toggle": "Toggle theme",
+      "light": "light",
+      "dark": "dark"
+    },
+    "technologies": "Technologies",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects"
+    }
   },
-  "role": "Fullstack Developer",
-  "lang_options": {
-    "en": "English",
-    "es": "Spanish",
-    "pt": "Portuguese"
+  "home_page": {
+    "hero_section": {
+      "description": "I build end-to-end apps.",
+      "read_more_about_me": "Read more about me"
+    }
   },
-  "theme": {
-    "toggle": "Toggle theme",
-    "light": "light",
-    "dark": "dark"
-  },
-  "hero_section": {
-    "description": "I build end-to-end apps.",
-    "read_more_about_me": "Read more about me"
-  },
-  "about": {
+  "about_page": {
+    "images_alt": {
+      "profile": "Profile picture"
+    },
     "resume": "Resume",
     "description": "",
     "experience": {
@@ -28,7 +38,7 @@
           "company": "Farmpro",
           "start_date": "2022-11-03",
           "end_date": null,
-          "description": "I work in the development of a web application for the management of agricultural properties.",
+          "description": "End-to-end development of applications for internal company management",
           "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, Flask, ReactJS, MySQL, Heroku and Vercel."
         },
         {
@@ -36,7 +46,7 @@
           "company": "Workana",
           "start_date": "2022-03-20",
           "end_date": "2022-11-03",
-          "description": "I work in the development of web applications for clients.",
+          "description": "Development and maintenance of web applications. Additionally, I developed a Bot for Telegram.",
           "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL and Heroku."
         }
       ]

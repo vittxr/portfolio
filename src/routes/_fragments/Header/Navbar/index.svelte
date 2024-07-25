@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Link from '$components/Link.svelte';
   import ThreeBarsIcon from '$components/icons/ThreeBarsIcon.svelte';
   import XIcon from '$components/icons/XIcon.svelte';
   import { onMount } from 'svelte';

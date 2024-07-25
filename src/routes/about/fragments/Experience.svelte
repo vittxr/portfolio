@@ -5,7 +5,7 @@
   import SuitcaseIcon from '$components/icons/SuitcaseIcon.svelte';
 
   const experienceItems: ExperienceItemType[] = $_(
-    'about.experience.items',
+    'about_page.experience.items',
   ) as unknown as ExperienceItemType[];
 </script>
 

@@ -5,13 +5,13 @@
   import { _ } from 'svelte-i18n';
 
   const timelineItems: TimelineItemType[] = $_(
-    'about.timeline.items',
+    'about_page.timeline.items',
   ) as unknown as TimelineItemType[];
 </script>
 
 <div class="mt-10 w-full">
   <h3 class="text-2xl font-bold">
-    {$_('about.timeline.title')}
+    {$_('about_page.timeline.title')}
   </h3>
   <Timeline initialIcon={CalendarIcon}>
     {#each timelineItems as { year, items }}
