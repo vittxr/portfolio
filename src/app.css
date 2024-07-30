@@ -23,10 +23,17 @@ html, body {
   width: 100%;
 }
 
+
 line {
+  stroke: #3f51b5;
+  stroke-width: 2;
+}
+
+
+/* line {
   stroke: #3f51b5;
   stroke-width: 4;
   stroke-linecap: round;
   filter: blur(4px);
   stroke-dashoffset: 50%;
-}
+} */

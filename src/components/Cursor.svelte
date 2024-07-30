@@ -7,8 +7,6 @@
     y: number;
   };
 
-  gsap.defaults({ ease: 'none' });
-
   const svgns = 'http://www.w3.org/2000/svg';
   let cursor: SVGSVGElement | null = null;
   const ease = 0.75;
@@ -24,47 +22,71 @@
       pointer.y = event.clientY;
     });
 
-    let leader: Pointer | SVGLineElement = pointer;
+    let leader = (prop: 'x' | 'y'): number => {
+      return prop === 'x' ? pointer.x : pointer.y;
+    };
 
     const total = 150;
     for (let i = 0; i < total; i++) {
       leader = createLine(leader, i);
     }
 
-    function createLine(leader: Pointer | SVGLineElement, i: number): SVGLineElement {
+    function createSmoke(x: number, y: number): void {
+      const smoke = document.createElementNS(svgns, 'line');
+      if (cursor) {
+        cursor.appendChild(smoke);
+      }
+
+      gsap.set(smoke, { cx: x, cy: y, r: 1, fill: 'rgba(0, 0, 0, 0.5)' });
+
+      gsap.to(smoke, {
+        duration: 1,
+        r: 10,
+        opacity: 0,
+        onComplete: () => {
+          if (smoke.parentNode) {
+            smoke.parentNode.removeChild(smoke);
+          }
+        },
+      });
+    }
+
+    function createLine(leader: (prop: 'x' | 'y') => number, i: number): (prop: 'x' | 'y') => any {
       const line = document.createElementNS(svgns, 'line');
       if (cursor) {
         cursor.appendChild(line);
       }
 
-      gsap.set(line, { x: -15, y: -15, alpha: (total - i) / total });
+      gsap.set(line, { x: -1500, y: -750 });
+      const pos = gsap.getProperty(line);
 
       gsap.to(line, {
-        duration: 200,
-        x: '+=1',
-        y: '+=1',
+        duration: 5000,
+        x: '+=150',
+        y: '+=10',
         repeat: -1,
+        ease: 'expo.inOut',
         modifiers: {
-          x: function () {
-            const posX = parseFloat(gsap.getProperty(line, 'x') as string);
-            const leaderX = parseFloat(gsap.getProperty(leader, 'x') as string);
-
-            const x = posX + (leaderX - posX) * ease;
+          x: () => {
+            let posX = pos('x') as number;
+            let leaderX = leader('x');
+            let x = posX + (leaderX - posX) * ease;
             line.setAttribute('x2', (leaderX - x).toString());
-            return x;
+            createSmoke(posX, pos('y') as number);
+            return x.toString();
           },
-          y: function () {
-            const posY = parseFloat(gsap.getProperty(line, 'y') as string);
-            const leaderY = parseFloat(gsap.getProperty(leader, 'y') as string);
-
-            const y = posY + (leaderY - posY) * ease;
+          y: () => {
+            let posY = pos('y') as number;
+            let leaderY = leader('y');
+            let y = posY + (leaderY - posY) * ease;
             line.setAttribute('y2', (leaderY - y).toString());
-            return y;
+            return y.toString();
           },
         },
       });
 
-      return line;
+      console.log('pos', pos);
+      return pos;
     }
   });
 </script>
