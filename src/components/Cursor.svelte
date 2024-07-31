@@ -61,7 +61,7 @@
       const pos = gsap.getProperty(line);
 
       gsap.to(line, {
-        duration: 5000,
+        duration: 2500,
         x: '+=150',
         y: '+=10',
         repeat: -1,
@@ -85,7 +85,6 @@
         },
       });
 
-      console.log('pos', pos);
       return pos;
     }
   });
