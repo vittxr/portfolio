@@ -1,93 +1,193 @@
-<script lang="ts">
-  import { gsap } from 'gsap';
-  import { afterUpdate } from 'svelte';
+<script>
+  // @ts-nocheck
+  import { onMount } from 'svelte';
 
-  type Pointer = {
-    x: number;
-    y: number;
+  let canvas = null;
+
+  function n(e) {
+    this.init(e || {});
+  }
+  n.prototype = {
+    init: function (e) {
+      this.phase = e.phase || 0;
+      this.offset = e.offset || 0;
+      this.frequency = e.frequency || 0.001;
+      this.amplitude = e.amplitude || 1;
+    },
+    update: function () {
+      return (
+        (this.phase += this.frequency), (e = this.offset + Math.sin(this.phase) * this.amplitude)
+      );
+    },
+    value: function () {
+      return e;
+    },
   };
 
-  const svgns = 'http://www.w3.org/2000/svg';
-  let cursor: SVGSVGElement | null = null;
-  const ease = 0.75;
+  function Line(e) {
+    this.init(e || {});
+  }
 
-  afterUpdate(() => {
-    const pointer: Pointer = {
-      x: window.innerWidth / 2,
-      y: window.innerHeight / 2,
+  Line.prototype = {
+    init: function (e) {
+      this.spring = e.spring + 0.1 * Math.random() - 0.05;
+      this.friction = E.friction + 0.01 * Math.random() - 0.005;
+      this.nodes = [];
+      for (var t, n = 0; n < E.size; n++) {
+        t = new Node();
+        t.x = pos.x;
+        t.y = pos.y;
+        this.nodes.push(t);
+      }
+    },
+    update: function () {
+      var e = this.spring,
+        t = this.nodes[0];
+      t.vx += (pos.x - t.x) * e;
+      t.vy += (pos.y - t.y) * e;
+      for (var n, i = 0, a = this.nodes.length; i < a; i++)
+        (t = this.nodes[i]),
+          0 < i &&
+            ((n = this.nodes[i - 1]),
+            (t.vx += (n.x - t.x) * e),
+            (t.vy += (n.y - t.y) * e),
+            (t.vx += n.vx * E.dampening),
+            (t.vy += n.vy * E.dampening)),
+          (t.vx *= this.friction),
+          (t.vy *= this.friction),
+          (t.x += t.vx),
+          (t.y += t.vy),
+          (e *= E.tension);
+    },
+    draw: function () {
+      var e,
+        t,
+        n = this.nodes[0].x,
+        i = this.nodes[0].y;
+      ctx.beginPath();
+      ctx.moveTo(n, i);
+      for (var a = 1, o = this.nodes.length - 2; a < o; a++) {
+        e = this.nodes[a];
+        t = this.nodes[a + 1];
+        n = 0.5 * (e.x + t.x);
+        i = 0.5 * (e.y + t.y);
+        ctx.quadraticCurveTo(e.x, e.y, n, i);
+      }
+      e = this.nodes[a];
+      t = this.nodes[a + 1];
+      ctx.quadraticCurveTo(e.x, e.y, t.x, t.y);
+      ctx.stroke();
+      ctx.closePath();
+    },
+  };
+
+  function onMousemove(e) {
+    function o() {
+      lines = [];
+      for (var e = 0; e < E.trails; e++)
+        lines.push(new Line({ spring: 0.45 + (e / E.trails) * 0.025 }));
+    }
+    function c(e) {
+      e.touches
+        ? ((pos.x = e.touches[0].pageX), (pos.y = e.touches[0].pageY))
+        : ((pos.x = e.clientX), (pos.y = e.clientY)),
+        e.preventDefault();
+    }
+    function l(e) {
+      1 == e.touches.length && ((pos.x = e.touches[0].pageX), (pos.y = e.touches[0].pageY));
+    }
+    document.removeEventListener('mousemove', onMousemove),
+      document.removeEventListener('touchstart', onMousemove),
+      document.addEventListener('mousemove', c),
+      document.addEventListener('touchmove', c),
+      document.addEventListener('touchstart', l),
+      c(e),
+      o(),
+      render();
+  }
+
+  function render() {
+    if (ctx.running) {
+      ctx.globalCompositeOperation = 'source-over';
+      ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+      ctx.globalCompositeOperation = 'lighter';
+      ctx.strokeStyle = 'hsla(' + Math.round(f.update()) + ',90%,50%,0.25)';
+      ctx.lineWidth = 1;
+      for (var e, t = 0; t < E.trails; t++) {
+        (e = lines[t]).update();
+        e.draw();
+      }
+      ctx.frame++;
+      window.requestAnimationFrame(render);
+    }
+  }
+
+  function resizeCanvas() {
+    ctx.canvas.width = window.innerWidth - 20;
+    ctx.canvas.height = window.innerHeight;
+  }
+
+  var ctx,
+    f,
+    e = 0,
+    pos = {},
+    lines = [],
+    E = {
+      debug: true,
+      friction: 0.5,
+      trails: 20,
+      size: 50,
+      dampening: 0.25,
+      tension: 0.98,
     };
 
-    window.addEventListener('mousemove', function (event: MouseEvent) {
-      pointer.x = event.clientX;
-      pointer.y = event.clientY;
+  function Node() {
+    this.x = 0;
+    this.y = 0;
+    this.vy = 0;
+    this.vx = 0;
+  }
+
+  onMount(() => {
+    ctx = canvas.getContext('2d');
+    ctx.running = true;
+    ctx.frame = 1;
+    f = new n({
+      phase: Math.random() * 2 * Math.PI,
+      amplitude: 85,
+      frequency: 0.0015,
+      offset: 285,
     });
-
-    let leader = (prop: 'x' | 'y'): number => {
-      return prop === 'x' ? pointer.x : pointer.y;
-    };
-
-    const total = 150;
-    for (let i = 0; i < total; i++) {
-      leader = createLine(leader, i);
-    }
-
-    function createSmoke(x: number, y: number): void {
-      const smoke = document.createElementNS(svgns, 'line');
-      if (cursor) {
-        cursor.appendChild(smoke);
+    document.addEventListener('mousemove', onMousemove);
+    document.addEventListener('touchstart', onMousemove);
+    document.body.addEventListener('orientationchange', resizeCanvas);
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('focus', () => {
+      if (!ctx.running) {
+        ctx.running = true;
+        render();
       }
-
-      gsap.set(smoke, { cx: x, cy: y, r: 1, fill: 'rgba(0, 0, 0, 0.5)' });
-
-      gsap.to(smoke, {
-        duration: 1,
-        r: 10,
-        opacity: 0,
-        onComplete: () => {
-          if (smoke.parentNode) {
-            smoke.parentNode.removeChild(smoke);
-          }
-        },
-      });
-    }
-
-    function createLine(leader: (prop: 'x' | 'y') => number, i: number): (prop: 'x' | 'y') => any {
-      const line = document.createElementNS(svgns, 'line');
-      if (cursor) {
-        cursor.appendChild(line);
-      }
-
-      gsap.set(line, { x: -1500, y: -750 });
-      const pos = gsap.getProperty(line);
-
-      gsap.to(line, {
-        duration: 2500,
-        x: '+=150',
-        y: '+=10',
-        repeat: -1,
-        ease: 'expo.inOut',
-        modifiers: {
-          x: () => {
-            let posX = pos('x') as number;
-            let leaderX = leader('x');
-            let x = posX + (leaderX - posX) * ease;
-            line.setAttribute('x2', (leaderX - x).toString());
-            createSmoke(posX, pos('y') as number);
-            return x.toString();
-          },
-          y: () => {
-            let posY = pos('y') as number;
-            let leaderY = leader('y');
-            let y = posY + (leaderY - posY) * ease;
-            line.setAttribute('y2', (leaderY - y).toString());
-            return y.toString();
-          },
-        },
-      });
-
-      return pos;
-    }
+    });
+    window.addEventListener('blur', () => {
+      ctx.running = true;
+    });
+    resizeCanvas();
   });
 </script>
 
-<svg bind:this={cursor} class="cursor z-[-1]"></svg>
+<canvas
+  bind:this={canvas}
+  class="cursor fixed top-0 left-0 w-full h-full pointer-events-none z-[9999]"
+></canvas>
+
+<style>
+  .cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+</style>
