@@ -9,7 +9,7 @@
   ) as unknown as TimelineItemType[];
 </script>
 
-<div class="mt-10 w-full">
+<section class="w-full">
   <h3 class="text-2xl font-bold">
     {$_('about_page.timeline.title')}
   </h3>
@@ -28,4 +28,4 @@
       </TimelineItem>
     {/each}
   </Timeline>
-</div>
+</section>

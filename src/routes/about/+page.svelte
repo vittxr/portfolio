@@ -5,7 +5,6 @@
   import ArrowTopRightOnSquare from '$components/icons/ArrowTopRightOnSquare.svelte';
   import Timeline from './fragments/Timeline.svelte';
   import Experience from './fragments/Experience.svelte';
-  import Graduation from './fragments/Graduation.svelte';
 </script>
 
 <div class="pt-10">
@@ -32,7 +31,12 @@
     learn new things.
   </p>
 
-  <Experience />
-  <Timeline />
-  <Graduation />
+  <div class="divide-y-2 divide-gray-400">
+    <div class="py-8">
+      <Experience />
+    </div>
+    <div class="py-8">
+      <Timeline />
+    </div>
+  </div>
 </div>

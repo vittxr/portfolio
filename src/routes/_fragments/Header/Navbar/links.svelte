@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
   import DocumentIcon from '$components/icons/DocumentIcon.svelte';
   import HomeIcon from '$components/icons/HomeIcon.svelte';
-  import Tools from '$components/icons/Tools.svelte';
+  import Tools from '$components/icons/ToolsIcon.svelte';
   import Link from '$components/Link.svelte';
   import { _ } from 'svelte-i18n';
 

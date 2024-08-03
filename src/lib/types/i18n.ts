@@ -9,5 +9,6 @@ export type ExperienceItemType = {
     start_date: string,
     end_date: string,
     description: string,
-    technologies: string
+    technologies: string,
+    responsibilities: string[]
 }

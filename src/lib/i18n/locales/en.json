@@ -32,6 +32,9 @@
     "description": "",
     "experience": {
       "title": "Experience",
+      "responsibilities_title": "Responsibilities",
+      "technologies_title": "Technologies",
+      "present_text": "Present",
       "items": [
         {
           "role": "Fullstack Developer",
@@ -39,15 +42,29 @@
           "start_date": "2022-11-03",
           "end_date": null,
           "description": "End-to-end development of applications for internal company management",
-          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, Flask, ReactJS, MySQL, Heroku and Vercel."
+          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, Flask, ReactJS, MySQL, Heroku and Vercel.",
+          "responsibilities": [
+            "Development of websites and mobile applications",
+            "Development of APIs using FastAPI and Flask",
+            "Analysis of pre-existing data to generate reports using Pandas and Numpy",
+            "Maintenance of a legacy website developed with PHP",
+            "Maintenance of a Linux server (Debian), where the applications are hosted",
+            "Use of Google services: Firebase, Drive API, Sheets API, Document AI, and Compute Engine"
+          ]
         },
         {
           "role": "Freelancer",
           "company": "Workana",
           "start_date": "2022-03-20",
           "end_date": "2022-11-03",
-          "description": "Development and maintenance of web applications. Additionally, I developed a Bot for Telegram.",
-          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL and Heroku."
+          "description": "Development and maintenance of web applications.",
+          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL and Heroku.",
+          "responsibilities": [
+            "Maintenance of a website developed with PHP",
+            "Development of a text editor using HTML, CSS, JavaScript, and jQuery",
+            "Development of a chatbot for Telegram using Python",
+            "Maintenance of an API developed with Flask"
+          ]
         }
       ]
     },
