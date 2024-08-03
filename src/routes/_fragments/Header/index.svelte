@@ -8,7 +8,7 @@
   <div class="flex items-center">
     <Navbar />
   </div>
-  <div class="flex items-center space-x-4">
+  <div class="w-full flex justify-between sm:justify-end items-center space-x-4">
     <LangDropdown />
     <ThemeButton />
   </div>
