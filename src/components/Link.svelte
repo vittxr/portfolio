@@ -19,7 +19,7 @@
 <a
   {href}
   class="font-medium relative cursor-pointer before:bg-red-500 {animationClasses[
-    animation?.hover || 'underline-inside-out'
+    animation?.hover ?? ''
   ]} {classname}"
 >
   <slot />
