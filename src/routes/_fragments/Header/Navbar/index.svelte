@@ -14,6 +14,9 @@
 <!-- Desktop navbar -->
 <nav class="hidden sm:block">
   <div class="flex space-x-6">
-    <Links animation="underline-inside-out" />
+    <Links
+      activeClassname="border-b-4 border-rose-500 before:hidden"
+      animation="underline-inside-out"
+    />
   </div>
 </nav>
