@@ -1,5 +1,6 @@
 <script lang="ts">
-  import ChevronUpDownIcon from '$components/icons/ChevronUpDownIcon.svelte';
+  import ChevronUpIcon from './icons/ChevronUpIcon.svelte';
+  import ChevronDownIcon from './icons/ChevronDownIcon.svelte';
   import CheckIcon from '$components/icons/CheckIcon.svelte';
   import { onMount } from 'svelte';
 
@@ -36,7 +37,7 @@
       aria-haspopup="listbox"
       aria-expanded="true"
       aria-labelledby="listbox-label"
-      on:click={(e) => setSelectDisplay(e, false)}
+      on:click={(e) => setSelectDisplay(e, !isHidden)}
     >
       {#each options as option}
         {#if option.value === selectedOption}
@@ -49,7 +50,11 @@
         {/if}
       {/each}
       <span class="ml-2 inset-y-0 right-0 flex items-center pointer-events-none">
-        <ChevronUpDownIcon className="h-5 w-5 text-gray-400" />
+        {#if isHidden}
+          <ChevronDownIcon className="h-4 w-4" />
+        {:else}
+          <ChevronUpIcon className="h-4 w-4" />
+        {/if}
       </span>
     </button>
 
