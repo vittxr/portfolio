@@ -25,7 +25,7 @@
   <Link
     {href}
     animation={{ hover: animation }}
-    classname={`inline-flex items-center ${$page.url.pathname === href && activeClassname}`}
+    classname={`inline-flex items-center  ${$page.url.pathname === href && activeClassname}`}
   >
     <svelte:component this={icon} className="w-4 h-4 mr-2" />
     {label}
