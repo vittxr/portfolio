@@ -6,7 +6,9 @@
   import Title from './Title.svelte';
   import I18nText from '$components/I18nText.svelte';
 
-  const timelineItems: TimelineItemType[] = $isLoading
+  let timelineItems: TimelineItemType[] = [];
+
+  $: timelineItems = $isLoading
     ? []
     : ($_('about_page.timeline.items') as unknown as TimelineItemType[]);
 </script>

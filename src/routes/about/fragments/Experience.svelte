@@ -9,7 +9,8 @@
   import Title from './Title.svelte';
   import I18nText from '$components/I18nText.svelte';
 
-  const experienceItems: ExperienceItemType[] = $isLoading
+  let experienceItems: ExperienceItemType[] = [];
+  $: experienceItems = $isLoading
     ? []
     : ($_('about_page.experience.items') as unknown as ExperienceItemType[]);
 </script>
