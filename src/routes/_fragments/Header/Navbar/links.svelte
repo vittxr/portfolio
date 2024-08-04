@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import I18nText from '$components/I18nText.svelte';
   import DocumentIcon from '$components/icons/DocumentIcon.svelte';
   import HomeIcon from '$components/icons/HomeIcon.svelte';
   import Tools from '$components/icons/ToolsIcon.svelte';
@@ -12,12 +13,11 @@
     | 'underline-left-to-right'
     | undefined = undefined;
   export let activeClassname = '';
-  // const activeClassname = 'underline decoration-rose-500 decoration-[3px] before:hidden';
 
   const links = [
-    { href: '/home', label: $_('utils.nav.home'), icon: HomeIcon },
-    { href: '/about', label: $_('utils.nav.about'), icon: DocumentIcon },
-    { href: '/projects', label: $_('utils.nav.projects'), icon: Tools },
+    { href: '/home', label: 'utils.nav.home', icon: HomeIcon },
+    { href: '/about', label: 'utils.nav.about', icon: DocumentIcon },
+    { href: '/projects', label: 'utils.nav.projects', icon: Tools },
   ];
 </script>
 
@@ -25,9 +25,12 @@
   <Link
     {href}
     animation={{ hover: animation }}
-    classname={`inline-flex items-center  ${$page.url.pathname === href && activeClassname}`}
+    classname={`inline-flex items-center ${$page.url.pathname === href && activeClassname}`}
   >
     <svelte:component this={icon} className="w-4 h-4 mr-2" />
-    {label}
+
+    <I18nText>
+      {$_(label)}
+    </I18nText>
   </Link>
 {/each}

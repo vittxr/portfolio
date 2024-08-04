@@ -1,7 +1,14 @@
 <script lang="ts">
   import Header from '$routes/_fragments/Header/index.svelte';
+  import { onMount } from 'svelte';
   import Footer from './Footer.svelte';
   export let className: string = '';
+
+  onMount(() => {
+    const { hash } = document.location;
+    const scrollTo = document.getElementById(hash.slice(1));
+    if (scrollTo) scrollTo.scrollIntoView();
+  });
 </script>
 
 <div

@@ -2,17 +2,19 @@
   import { Timeline, TimelineItem } from '$components/Timeline';
   import type { TimelineItemType } from '$lib/types/i18n';
   import CalendarIcon from '$components/icons/CalendarIcon.svelte';
-  import { _ } from 'svelte-i18n';
+  import { _, isLoading } from 'svelte-i18n';
+  import Title from './Title.svelte';
+  import I18nText from '$components/I18nText.svelte';
 
-  const timelineItems: TimelineItemType[] = $_(
-    'about_page.timeline.items',
-  ) as unknown as TimelineItemType[];
+  const timelineItems: TimelineItemType[] = $isLoading
+    ? []
+    : ($_('about_page.timeline.items') as unknown as TimelineItemType[]);
 </script>
 
 <section class="w-full">
-  <h3 class="text-2xl font-bold">
-    {$_('about_page.timeline.title')}
-  </h3>
+  <Title ancorKey="timeline">
+    <I18nText>{$_('about_page.timeline.title')}</I18nText>
+  </Title>
   <Timeline initialIcon={CalendarIcon}>
     {#each timelineItems as { year, items }}
       <TimelineItem idx={year} icon={CalendarIcon}>

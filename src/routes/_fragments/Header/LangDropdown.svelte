@@ -22,7 +22,6 @@
       icon: BrazilFlagIcon,
     },
   ]}
-  selectedOption={$locale || 'pt'}
+  selectedOption={$locale || 'pt-BR'}
   onChange={changeLang}
-  className=""
 />

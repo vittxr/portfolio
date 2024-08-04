@@ -5,6 +5,7 @@
   import ArrowTopRightOnSquare from '$components/icons/ArrowTopRightOnSquare.svelte';
   import Timeline from './fragments/Timeline.svelte';
   import Experience from './fragments/Experience.svelte';
+  import I18nText from '$components/I18nText.svelte';
 </script>
 
 <div class="pt-10">
@@ -17,7 +18,7 @@
       </h2>
 
       <Link href="/static/resume.pdf" classname="flex items-center space-x-1 w-fit">
-        <span>{$_('about.resume')}</span>
+        <span><I18nText>{$_('about.resume')}</I18nText></span>
         <ArrowTopRightOnSquare />
       </Link>
     </div>
@@ -26,16 +27,14 @@
   </div>
 
   <p class="my-8 text-center sm:text-left">
-    I'm a software engineer with a passion for web development. I have experience with technologies
-    like React, Vue, Svelte, and Node.js. I'm always looking for new challenges and opportunities to
-    learn new things.
+    <I18nText>{$_('about_page.description')}</I18nText>
   </p>
 
   <div class="divide-y-2 divide-gray-400">
-    <div class="py-8">
+    <div id="experience" class="py-8">
       <Experience />
     </div>
-    <div class="py-8">
+    <div id="timeline" class="py-8">
       <Timeline />
     </div>
   </div>

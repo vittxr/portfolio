@@ -14,26 +14,6 @@ html, body {
     @apply hover:underline
 }
 
-/* Home page custom cursor */
-.cursor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+html, body {
+    @apply scroll-smooth
 }
-
-
-line {
-  stroke: #3f51b5;
-  stroke-width: 2;
-}
-
-
-/* line {
-  stroke: #3f51b5;
-  stroke-width: 4;
-  stroke-linecap: round;
-  filter: blur(4px);
-  stroke-dashoffset: 50%;
-} */

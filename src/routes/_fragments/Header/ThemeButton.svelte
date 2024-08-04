@@ -1,11 +1,11 @@
 <script lang="ts">
   import Switch from '$components/Switch.svelte';
-  import { _ } from 'svelte-i18n';
+  import { _, isLoading } from 'svelte-i18n';
   import SunIcon from '$components/icons/SunIcon.svelte';
   import MoonIcon from '$components/icons/MoonIcon.svelte';
   import { browser } from '$app/environment';
 
-  let isDarkTheme = false;
+  let isDarkTheme = true;
   const toggleTheme = () => {
     isDarkTheme = !isDarkTheme;
     localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
@@ -27,7 +27,7 @@
 
 <Switch
   onSwitch={toggleTheme}
-  srOnly={$_('theme.toggle')}
+  srOnly={$isLoading ? 'loading' : $_('theme.toggle')}
   icons={{ enabled: SunIcon, disabled: MoonIcon }}
   defaultValue={isDarkTheme ? 'enabled' : 'disabled'}
 />
