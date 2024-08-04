@@ -75,30 +75,29 @@
           "year": "2024",
           "items": [
             "Learned <a href='https://firebase.google.com' class='external-link'>Firebase</a>",
-            "Learned NoSQL databases",
-            "Learned GCP APIs: DocumentAI",
-            "Learned Docker"
+            "Learned <a href='https://www.mongodb.com' class='external-link'>MongoDB</a>",
+            "Learned GCP APIs: <a href='https://cloud.google.com/document-ai' class='external-link'>DocumentAI</a>",
+            "Learned <a href='https://www.docker.com' class='external-link'>Docker</a>"
           ]
         },
         {
           "year": "2023",
           "items": [
-            "Start graduation studies in Computer Systems Analyst in UTP university",
-            "Learned GCP and Digital Ocean",
-            "Learned Typescript",
-            "Learned cross-platform mobile development with React Native and Expo",
-            "Learned the development of Rest APIs with FastAPI",
-            "Learned how to deploy applications in VMs",
-            "Learned GCP APIs: Google Drive and Google Spread Sheets"
+            "Start graduation studies in Computer Systems Analyst in <a href='https://tuiuti.edu.br' class='external-link'>UTP university</a>",
+            "Learned how create virtual machines in <a href='https://cloud.google.com/' class='external-link'>GCP</a> and <a href='https://www.digitalocean.com' class='external-link'>Digital Ocean</a>",
+            "Learned <a href='https://www.typescriptlang.org' class='external-link'>Typescript</a>",
+            "Learned cross-platform mobile development with <a href='https://reactnative.dev' class='external-link'>React Native</a> and <a href='https://expo.dev' class='external-link'>Expo</a>",
+            "Learned the development of Rest APIs with <a href='https://fastapi.tiangolo.com' class='external-link'>FastAPI</a>",
+            "Learned GCP APIs: <a href='https://developers.google.com/drive' class='external-link'>Google Drive API</a> and <a href='https://developers.google.com/sheets' class='external-link'>Sheets API</a>"
           ]
         },
         {
           "year": "2022",
           "items": [
-            "Learned Flask and NodeJS",
-            "Learned SQL databases with MySQL/MariaDB",
-            "Learned Bootstrap, Tailwind and ReactJS",
-            "Learned how to deploy production apps with Heroku and Vercel",
+            "Learned <a href='https://flask.palletsprojects.com' class='external-link'>Flask</a> and <a href='https://nodejs.org/' class='external-link'>NodeJS</a>",
+            "Learned SQL databases with <a href='https://dev.mysql.com' class='external-link'>MySQL/MariaDB</a>",
+            "Learned frontend development tools: <a href='https://getbootstrap.com' class='external-link'>Bootstrap</a>, <a href='https://tailwindcss.com' class='external-link'>Tailwind</a>, <a href='https://jquery.com' class='external-link'>Jquery</a>, <a href='https://react.dev' class='external-link'>ReactJS</a>",
+            "Learned how to deploy production apps with <a href='https://www.heroku.com' class='external-link'>Heroku</a> and <a href='https://vercel.com' class='external-link'>Vercel</a>",
             "Started todo freelance jobs",
             "Started a job as fullstack developer in Farmpro"
           ]
@@ -106,16 +105,16 @@
         {
           "year": "2021",
           "items": [
-            "Learned Python",
-            "Learned <a href='https://git-scm.com'>Git</a> and <a href='https://github.com'>GitHub</a>",
+            "Learned <a href='https://www.python.org' class='external-link'>Python</a>",
+            "Learned <a href='https://git-scm.com' class='external-link'>Git</a> and <a href='https://github.com' class='external-link'>GitHub</a>",
             "Started a course of the government of my country to dig in the development of web applications",
-            "Did my first remunerated job using python: solve university exercises."
+            "Did my first remunerated job using python."
           ]
         },
         {
           "year": "2020",
           "items": [
-            "Learned the basics of HTML, CSS and JavaScript"
+            "Learned the basics of <a href='developer.mozilla.org/docs/Web/HTML' class='external-link'>HTML</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' class='external-link'>CSS</a> and <a href='https://developer.mozilla.org/docs/Web/JavaScript' class='external-link'>JavaScript</a>"
           ]
         }
       ]
