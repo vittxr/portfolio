@@ -121,5 +121,84 @@
         }
       ]
     }
+  },
+  "projects_pages": {
+    "items": [
+      {
+        "name": "file to text",
+        "description": "A simple web application that allows you to convert a file to text.",
+        "github_repo": "https://github.com/vittxr/file_to_text",
+        "tools": [
+          "ReactJS",
+          "Typescript",
+          "Tailwind",
+          "Fastapi",
+          "MongoDB",
+          "Debian",
+          "Nginx",
+          "Supervisor",
+          "Docker"
+        ]
+      },
+      {
+        "name": "engineers-race",
+        "description": "This application was developed for the interdisciplinary project at UTP University.",
+        "github_repo": "https://github.com/vittxr/engineers_race_app",
+        "tools": [
+          "ReactJS",
+          "Typescript",
+          "Tailwind",
+          "Fastapi",
+          "MariaDB",
+          "Debian",
+          "Nginx",
+          "Supervisor"
+        ]
+      },
+      {
+        "name": "cep-checker",
+        "description": "A simple web application that allows you to search for addresses in Brazil using the CEP.",
+        "github_repo": "https://github.com/vittxr/cep-checker",
+        "live_demo": "https://cep-checker.vercel.app",
+        "tools": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "API ViaCEP",
+          "Vercel"
+        ]
+      },
+      {
+        "name": "todo-app",
+        "description": "A simple todo desktop app made with Java.",
+        "github_repo": "https://github.com/vittxr/todo-app",
+        "tools": [
+          "Java",
+          "Mysql"
+        ]
+      },
+      {
+        "name": "wthcast",
+        "description": "A web application that allows you to search for weather information in any city in the world.",
+        "github_repo": "https://github.com/vittxr/wthcast",
+        "tools": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Flask",
+          "OpenWeather API"
+        ]
+      },
+      {
+        "name": "snake-game",
+        "description": "A simple snake game made with HTML, CSS, and JavaScript.",
+        "github_repo": "https://github.com/vittxr/SnakeGame",
+        "tools": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      }
+    ]
   }
 }
