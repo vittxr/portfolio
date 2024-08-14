@@ -8,7 +8,7 @@
 >
   <nav class="flex justify-around px-2 py-1 space-x-2">
     <Links
-      activeClassName="bg-white text-black rounded-full px-3 py-1"
+      activeClassName="bg-white text-black rounded-full px-3 py-1 animate-grow"
       textInactiveClassName="hidden"
     />
   </nav>

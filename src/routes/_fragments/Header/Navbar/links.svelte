@@ -30,7 +30,7 @@
   <Link
     {href}
     animation={{ hover: animation }}
-    classname={`inline-flex items-center ${$page.url.pathname === href ? `${activeClassName} animate-grow` : inactiveClassName}`}
+    classname={`inline-flex items-center ${$page.url.pathname === href ? `${activeClassName}` : inactiveClassName}`}
   >
     <svelte:component
       this={icon}
