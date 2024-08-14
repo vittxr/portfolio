@@ -12,7 +12,12 @@
     | 'underline-right-to-left'
     | 'underline-left-to-right'
     | undefined = undefined;
-  export let activeClassname = '';
+  export let activeClassName = '';
+  export let inactiveClassName = '';
+  export let textActiveClassName = '';
+  export let textInactiveClassName = '';
+  export let iconActiveClassName = '';
+  export let iconInactiveClassName = '';
 
   const links = [
     { href: '/home', label: 'utils.nav.home', icon: HomeIcon },
@@ -21,16 +26,21 @@
   ];
 </script>
 
-{#each links as { href, label, icon }}
+{#each links as { href, label, icon }, index}
   <Link
     {href}
     animation={{ hover: animation }}
-    classname={`inline-flex items-center ${$page.url.pathname === href && activeClassname}`}
+    classname={`inline-flex items-center ${$page.url.pathname === href ? `${activeClassName} animate-grow` : inactiveClassName}`}
   >
-    <svelte:component this={icon} className="w-4 h-4 mr-2" />
+    <svelte:component
+      this={icon}
+      className={`w-4 h-4 mr-2 ${$page.url.pathname === href ? iconActiveClassName : iconInactiveClassName}`}
+    />
 
     <I18nText>
-      {$_(label)}
+      <span class={`${$page.url.pathname === href ? textActiveClassName : textInactiveClassName}`}
+        >{$_(label)}
+      </span>
     </I18nText>
   </Link>
 {/each}
