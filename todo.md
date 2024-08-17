@@ -1,14 +1,8 @@
 # Todo
 
-- [ ] projects page 
-- [ ] add resume for all supported languages: pt-br and en-us.
 
 # Doing
 
-- [ ] about page
-  - [ ] add timeline
-  - [ ] add experience
-  - [ ] add graduation 
    
 # Done
 
@@ -24,3 +18,9 @@
 - [x] add hero section
   - [x] add button to download cv 
 - [x] add navbar to navigate through the sections
+- [x] about page
+  - [x] add timeline
+  - [x] add experience
+  - [x] add graduation 
+- [x] projects page 
+- [x] add resume for all supported languages: pt-br and en-us.
