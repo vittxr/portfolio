@@ -16,7 +16,8 @@
       "home": "Home",
       "about": "About",
       "projects": "Projects"
-    }
+    },
+    "date": "Date"
   },
   "home_page": {
     "hero_section": {

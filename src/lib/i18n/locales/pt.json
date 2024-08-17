@@ -1,44 +1,207 @@
 {
-  "images_alt": {
-    "profile": "Foto de perfil"
+  "utils": {
+    "role": "Desenvolvedor Fullstack",
+    "lang_options": {
+      "en": "Inglês",
+      "es": "Espanhol",
+      "pt": "Português"
+    },
+    "theme": {
+      "toggle": "Alternar tema",
+      "light": "claro",
+      "dark": "escuro"
+    },
+    "technologies": "Tecnologias",
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos"
+    },
+    "date": "Data"
   },
-  "role": "Desenvolvedor Fullstack",
-  "lang_options": {
-    "en": "Inglês",
-    "es": "Espanhol",
-    "pt": "Português"
+  "home_page": {
+    "hero_section": {
+      "description": "Desenvolvedor de aplicações de ponta a ponta.",
+      "read_more_about_me": "Leia mais sobre mim"
+    }
   },
-  "theme": {
-    "toggle": "Alternar Tema",
-    "light": "Claro",
-    "dark": "Escuro"
-  },
-  "hero_section": {
-    "description": "Experiente no desenvolvimento ponta-a-ponta de aplicações.",
-    "read_more_about_me": "Leia mais sobre mim"
-  },
-  "about": {
+  "about_page": {
+    "images_alt": {
+      "profile": "Foto de perfil"
+    },
+    "software_developer_at": "Desenvolvedor de Software na",
     "resume": "Currículo",
-    "description": "",
+    "resume_path": "/static/resume_pt_br.pdf",
+    "description": "Sou um desenvolvedor focado tanto no backend quanto no frontend de aplicações. Atualmente, trabalho como desenvolvedor full-stack, lidando com todos os aspectos do projeto: frontend, backend, banco de dados e servidor. Gosto de entender a funcionalidade geral das aplicações e desenvolvê-las de ponta a ponta, mas minha especialidade é no desenvolvimento backend e configuração de servidores.",
+    "experience": {
+      "title": "Experiência",
+      "responsibilities_title": "Responsabilidades",
+      "technologies_title": "Tecnologias",
+      "present_text": "Atualmente",
+      "items": [
+        {
+          "role": "Desenvolvedor Fullstack",
+          "company": "Farmpro",
+          "start_date": "2022-11-03",
+          "end_date": null,
+          "description": "Desenvolvimento de aplicações de ponta a ponta para a gestão interna da empresa",
+          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, Flask, ReactJS, MySQL, Heroku e Vercel.",
+          "responsibilities": [
+            "Desenvolvimento de websites e aplicativos móveis",
+            "Desenvolvimento de APIs usando FastAPI e Flask",
+            "Análise de dados pré-existentes para gerar relatórios usando Pandas e Numpy",
+            "Manutenção de um site legado desenvolvido em PHP",
+            "Manutenção de um servidor Linux (Debian), onde as aplicações estão hospedadas",
+            "Uso de serviços do Google: Firebase, Drive API, Sheets API, Document AI e Compute Engine"
+          ]
+        },
+        {
+          "role": "Freelancer",
+          "company": "Workana",
+          "start_date": "2022-03-20",
+          "end_date": "2022-11-03",
+          "description": "Desenvolvimento e manutenção de aplicações web.",
+          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL e Heroku.",
+          "responsibilities": [
+            "Manutenção de um site desenvolvido com PHP",
+            "Desenvolvimento de um editor de texto usando HTML, CSS, JavaScript e jQuery",
+            "Desenvolvimento de um chatbot para o Telegram usando Python",
+            "Manutenção de uma API desenvolvida com Flask"
+          ]
+        }
+      ]
+    },
     "timeline": {
-      "title": "Linha do tempo",
+      "title": "Linha do Tempo",
       "items": [
         {
           "year": "2024",
           "items": [
-            "Work",
-            "Learned docker",
-            "aaa"
+            "Aprendi <a href='https://firebase.google.com' class='external-link'>Firebase</a>",
+            "Aprendi <a href='https://www.mongodb.com' class='external-link'>MongoDB</a>",
+            "Aprendi APIs do GCP: <a href='https://cloud.google.com/document-ai' class='external-link'>DocumentAI</a>",
+            "Aprendi <a href='https://www.docker.com' class='external-link'>Docker</a>"
           ]
         },
         {
           "year": "2023",
           "items": [
-            "Learned cross-app development with Expo and React Native",
-            "aka"
+            "Comecei a graduação em Análise de Sistemas de Computação na <a href='https://tuiuti.edu.br' class='external-link'>Universidade UTP</a>",
+            "Aprendi a criar máquinas virtuais no <a href='https://cloud.google.com/' class='external-link'>GCP</a> e <a href='https://www.digitalocean.com' class='external-link'>Digital Ocean</a>",
+            "Aprendi <a href='https://www.typescriptlang.org' class='external-link'>Typescript</a>",
+            "Aprendi desenvolvimento de aplicativos móveis multiplataforma com <a href='https://reactnative.dev' class='external-link'>React Native</a> e <a href='https://expo.dev' class='external-link'>Expo</a>",
+            "Aprendi desenvolvimento de APIs Rest com <a href='https://fastapi.tiangolo.com' class='external-link'>FastAPI</a>",
+            "Aprendi APIs do GCP: <a href='https://developers.google.com/drive' class='external-link'>Google Drive API</a> e <a href='https://developers.google.com/sheets' class='external-link'>Sheets API</a>"
+          ]
+        },
+        {
+          "year": "2022",
+          "items": [
+            "Aprendi <a href='https://flask.palletsprojects.com' class='external-link'>Flask</a> e <a href='https://nodejs.org/' class='external-link'>NodeJS</a>",
+            "Aprendi bancos de dados SQL com <a href='https://dev.mysql.com' class='external-link'>MySQL/MariaDB</a>",
+            "Aprendi ferramentas de desenvolvimento frontend: <a href='https://getbootstrap.com' class='external-link'>Bootstrap</a>, <a href='https://tailwindcss.com' class='external-link'>Tailwind</a>, <a href='https://jquery.com' class='external-link'>Jquery</a>, <a href='https://react.dev' class='external-link'>ReactJS</a>",
+            "Aprendi a fazer deploy de aplicações em produção com <a href='https://www.heroku.com' class='external-link'>Heroku</a> e <a href='https://vercel.com' class='external-link'>Vercel</a>",
+            "Comecei a fazer trabalhos freelancer",
+            "Comecei a trabalhar como desenvolvedor fullstack na Farmpro"
+          ]
+        },
+        {
+          "year": "2021",
+          "items": [
+            "Aprendi <a href='https://www.python.org' class='external-link'>Python</a>",
+            "Aprendi <a href='https://git-scm.com' class='external-link'>Git</a> e <a href='https://github.com' class='external-link'>GitHub</a>",
+            "Comecei um curso do governo do meu país para aprofundar no desenvolvimento de aplicações web",
+            "Realizei meu primeiro trabalho remunerado usando Python."
+          ]
+        },
+        {
+          "year": "2020",
+          "items": [
+            "Aprendi o básico de <a href='developer.mozilla.org/docs/Web/HTML' class='external-link'>HTML</a>, <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' class='external-link'>CSS</a> e <a href='https://developer.mozilla.org/docs/Web/JavaScript' class='external-link'>JavaScript</a>"
           ]
         }
       ]
     }
+  },
+  "projects_page": {
+    "title": "Projetos",
+    "description": "Aqui estão alguns projetos que eu desenvolvi.",
+    "items": [
+      {
+        "name": "file to text",
+        "description": "Uma aplicação web simples que permite converter um arquivo em texto.",
+        "github_repo": "https://github.com/vittxr/file_to_text",
+        "tools": [
+          "ReactJS",
+          "Typescript",
+          "Tailwind",
+          "Fastapi",
+          "MongoDB",
+          "Debian",
+          "Nginx",
+          "Supervisor",
+          "Docker"
+        ]
+      },
+      {
+        "name": "engineers-race",
+        "description": "Esta aplicação foi desenvolvida para o projeto interdisciplinar na Universidade UTP.",
+        "github_repo": "https://github.com/vittxr/engineers_race_app",
+        "tools": [
+          "ReactJS",
+          "Typescript",
+          "Tailwind",
+          "Fastapi",
+          "MariaDB",
+          "Debian",
+          "Nginx",
+          "Supervisor"
+        ]
+      },
+      {
+        "name": "cep-checker",
+        "description": "Uma aplicação web simples que permite pesquisar endereços no Brasil usando o CEP.",
+        "github_repo": "https://github.com/vittxr/cep-checker",
+        "live_demo": "https://cep-checker.vercel.app",
+        "tools": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "API ViaCEP",
+          "Vercel"
+        ]
+      },
+      {
+        "name": "todo-app",
+        "description": "Um aplicativo de tarefas simples para desktop feito com Java.",
+        "github_repo": "https://github.com/vittxr/todo-app",
+        "tools": [
+          "Java",
+          "Mysql"
+        ]
+      },
+      {
+        "name": "wthcast",
+        "description": "Uma aplicação web que permite pesquisar informações meteorológicas em qualquer cidade do mundo.",
+        "github_repo": "https://github.com/vittxr/wthcast",
+        "tools": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Flask",
+          "OpenWeather API"
+        ]
+      },
+      {
+        "name": "snake-game",
+        "description": "Um jogo da cobrinha simples feito com HTML, CSS e JavaScript.",
+        "github_repo": "https://github.com/vittxr/SnakeGame",
+        "tools": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      }
+    ]
   }
 }

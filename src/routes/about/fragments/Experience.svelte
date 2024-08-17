@@ -44,14 +44,16 @@
             </div>
 
             <div class="space-x-1">
-              <span class="font-semibold"
-                ><I18nText>{$_('about_page.experience.technologies_title')}</I18nText>:</span
-              >
+              <span class="font-semibold">
+                <I18nText>{$_('about_page.experience.technologies_title')}</I18nText>:
+              </span>
               <span>{technologies}</span>
             </div>
 
             <div class="flex space-x-1">
-              <span class="font-semibold">Date: </span>
+              <span class="font-semibold">
+                <I18nText>{$_('utils.date')}</I18nText>:
+              </span>
 
               <div>
                 <time datetime={start_date} class="border-gray-200 lg:ml-0 lg:mt-2 lg:pl-0">
