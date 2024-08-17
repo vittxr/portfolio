@@ -5,7 +5,7 @@
 </script>
 
 <footer class="flex justify-between">
-  <span class="text-gray-300 text-sm">© 2024 - Vitor Schirmer</span>
+  <span class=" text-sm">© 2024 - Vitor Schirmer</span>
 
   <div class="flex space-x-2">
     <a href="https://github.com/vittxr" target="_blank">
