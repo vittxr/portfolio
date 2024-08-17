@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>vschirmer / home</title>
+  <title>vschirmer / {$_('utils.nav.home')}</title>
 </svelte:head>
 
 <Cursor />

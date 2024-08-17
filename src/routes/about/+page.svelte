@@ -9,6 +9,10 @@
   import Card from '$components/Card.svelte';
 </script>
 
+<svelte:head>
+  <title>vschirmer / {$_('utils.nav.about')}</title>
+</svelte:head>
+
 <div class="pt-10 space-y-10 mb-10">
   <Card>
     <div class="flex flex-col-reverse sm:flex-row justify-between items-center">

@@ -4,6 +4,10 @@
   import Projects from './fragments/Projects.svelte';
 </script>
 
+<svelte:head>
+  <title>vschirmer / {$_('utils.nav.projects')}</title>
+</svelte:head>
+
 <div class="pt-10">
   <h1 class="text-4xl font-bold">
     <I18nText>{$_('projects_page.title')}</I18nText>
