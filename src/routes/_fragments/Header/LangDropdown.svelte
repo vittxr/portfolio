@@ -7,6 +7,7 @@
 
   const changeLang = (value: string) => {
     locale.set(value);
+    localStorage.setItem('locale', value);
   };
 </script>
 
