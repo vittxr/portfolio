@@ -26,7 +26,7 @@
   ];
 </script>
 
-{#each links as { href, label, icon }, index}
+{#each links as { href, label, icon }}
   <Link
     {href}
     animation={{ hover: animation }}
