@@ -12,3 +12,11 @@ export type ExperienceItemType = {
     technologies: string,
     responsibilities: string[]
 }
+
+export type ProjectItemType = {
+    name: string,
+    description: string,
+    tools: string[],
+    github_repo?: string
+    live_demo?: string
+}

@@ -122,7 +122,9 @@
       ]
     }
   },
-  "projects_pages": {
+  "projects_page": {
+    "title": "Projects",
+    "description": "Here are some projects that I have developed.",
     "items": [
       {
         "name": "file to text",
