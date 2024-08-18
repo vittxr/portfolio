@@ -196,6 +196,7 @@
         "name": "snake-game",
         "description": "A simple snake game made with HTML, CSS, and JavaScript.",
         "github_repo": "https://github.com/vittxr/SnakeGame",
+        "live_demo": "https://snake-game-omega-blue.vercel.app",
         "tools": [
           "HTML",
           "CSS",

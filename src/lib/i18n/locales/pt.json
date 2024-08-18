@@ -196,6 +196,7 @@
         "name": "snake-game",
         "description": "Um jogo da cobrinha simples feito com HTML, CSS e JavaScript.",
         "github_repo": "https://github.com/vittxr/SnakeGame",
+        "live_demo": "https://snake-game-omega-blue.vercel.app",
         "tools": [
           "HTML",
           "CSS",
