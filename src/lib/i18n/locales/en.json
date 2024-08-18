@@ -128,7 +128,7 @@
     "description": "Here are some projects that I have developed.",
     "items": [
       {
-        "name": "file to text",
+        "name": "file-to-text",
         "description": "A simple web application that allows you to convert a file to text.",
         "github_repo": "https://github.com/vittxr/file_to_text",
         "tools": [
@@ -140,7 +140,8 @@
           "Debian",
           "Nginx",
           "Supervisor",
-          "Docker"
+          "Docker",
+          "DocumentAI API"
         ]
       },
       {
@@ -156,6 +157,14 @@
           "Debian",
           "Nginx",
           "Supervisor"
+        ]
+      },
+      {
+        "name": "cli-hangman-game",
+        "description": "Hangman game to play in the terminal, made with Python for a college assignment.",
+        "github_repo": "https://github.com/vittxr/hangman_game",
+        "tools": [
+          "Python"
         ]
       },
       {
