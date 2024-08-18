@@ -7,6 +7,9 @@
   import I18nText from '$components/I18nText.svelte';
   import download from '$lib/utils/download';
   import Card from '$components/Card.svelte';
+  import PhoneIcon from '$components/icons/PhoneIcon.svelte';
+  import EmailIcon from '$components/icons/EmailIcon.svelte';
+  import Badge from '$components/Badge.svelte';
 </script>
 
 <svelte:head>
@@ -34,6 +37,17 @@
       </div>
 
       <Picture />
+    </div>
+
+    <div class="flex space-x-2">
+      <Badge className="flex items-center space-x-1">
+        <PhoneIcon />
+        <span>+55 (41) 9997758225 </span>
+      </Badge>
+      <Badge className="flex items-center space-x-1">
+        <EmailIcon />
+        <span>vitor.roberto3022@gmail.com</span>
+      </Badge>
     </div>
 
     <p class="my-8 text-center sm:text-left">

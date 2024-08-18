@@ -1,6 +1,7 @@
 # Todo
 
 
+
 # Doing
 
    
@@ -24,3 +25,6 @@
   - [x] add graduation 
 - [x] projects page 
 - [x] add resume for all supported languages: pt-br and en-us.
+- [x] add contact section in about about page:
+  - [x] add phone number
+  - [x] add email
