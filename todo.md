@@ -1,6 +1,6 @@
 # Todo
 
-
+- [ ] improve contacts badge in about page: when user click in it copy the value to his clipboard (it might be worth add a feedback animation)
 
 # Doing
 
