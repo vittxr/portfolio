@@ -131,6 +131,7 @@
         "name": "file-to-text",
         "description": "Uma aplicação web simples que permite converter um arquivo em texto.",
         "github_repo": "https://github.com/vittxr/file_to_text",
+        "live_demo": "https://doc-to-text.vercel.app"
         "tools": [
           "ReactJS",
           "Typescript",
