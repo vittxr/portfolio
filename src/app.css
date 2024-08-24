@@ -4,7 +4,8 @@
 
 html, body {
     @apply h-full;
-    @apply scroll-smooth
+    @apply scroll-smooth;
+    @apply overflow-x-hidden;
 }
 
 .external-link {

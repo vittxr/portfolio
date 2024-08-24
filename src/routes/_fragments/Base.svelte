@@ -12,7 +12,7 @@
 </script>
 
 <div
-  class="px-10 py-10 min-h-screen flex flex-col dark:bg-gray-950 text-black dark:text-white {className}"
+  class="px-10 pt-10 pb-16 sm:pb-10 min-h-screen flex flex-col dark:bg-gray-950 text-black dark:text-white {className}"
 >
   <Header />
 

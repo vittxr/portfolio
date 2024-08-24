@@ -34,7 +34,7 @@
   >
     <svelte:component
       this={icon}
-      className={`w-4 h-4 mr-2 ${$page.url.pathname === href ? iconActiveClassName : iconInactiveClassName}`}
+      className={`w-4 h-4 mr-2 text-black dark:text-white ${$page.url.pathname === href ? `dark:text-black ${iconActiveClassName}` : iconInactiveClassName}`}
     />
 
     <I18nText>

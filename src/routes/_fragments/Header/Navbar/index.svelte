@@ -4,13 +4,10 @@
 
 <!-- Mobile navbar -->
 <div
-  class="w-fit mx-auto shadow-md rounded-full fixed inset-x-0 bottom-2 z-40 bg-gray-800 border-t border-gray-700 sm:hidden"
+  class="w-fit mx-auto shadow-md rounded-full fixed inset-x-0 bottom-2 z-40 bg-gray-200 dark:bg-gray-800 sm:hidden"
 >
   <nav class="flex justify-around px-2 py-1 space-x-2">
-    <Links
-      activeClassName="bg-white text-black rounded-full px-3 py-1 animate-grow"
-      textInactiveClassName="hidden"
-    />
+    <Links activeClassName="bg-white text-black rounded-full px-3 py-1" />
   </nav>
 </div>
 
