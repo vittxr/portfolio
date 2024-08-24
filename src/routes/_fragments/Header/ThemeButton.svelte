@@ -4,7 +4,6 @@
   import SunIcon from '$components/icons/SunIcon.svelte';
   import MoonIcon from '$components/icons/MoonIcon.svelte';
   import { browser } from '$app/environment';
-
   let isDarkTheme = true;
   const toggleTheme = () => {
     isDarkTheme = !isDarkTheme;
