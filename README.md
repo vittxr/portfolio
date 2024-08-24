@@ -26,3 +26,15 @@ const config = {
 
 export default config;
 ```
+
+# Troubleshoot:
+
+## 1. svelte-i18n
+
+error: `Cannot format a message without first setting the initial locale`
+
+this occurs if you access the i18n content before it loads. You need to ensure that the content is loaded before accessing it:
+
+```html
+<title>vschirmer / {$isLoading ? 'loading' : $_('utils.nav.home')}</title>
+```
