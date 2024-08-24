@@ -30,7 +30,7 @@
         {/if}
       </div>
 
-      <div class="flex space-x-4">
+      <div class="flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-2 sm:space-y-0">
         {#if github_repo}
           <a href={github_repo} target="_blank" class="text-blue-500 hover:underline">
             <Button
