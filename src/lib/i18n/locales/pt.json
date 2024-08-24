@@ -31,7 +31,7 @@
     },
     "software_developer_at": "Desenvolvedor de Software na",
     "resume": "Currículo",
-    "resume_path": "/static/resume_pt_br.pdf",
+    "resume_path": "/resume_pt_br.pdf",
     "description": "Sou um desenvolvedor focado tanto no backend quanto no frontend de aplicações. Atualmente, trabalho como desenvolvedor full-stack, lidando com todos os aspectos do projeto: frontend, backend, banco de dados e servidor. Gosto de entender a funcionalidade geral das aplicações e desenvolvê-las de ponta a ponta, mas minha especialidade é no desenvolvimento backend e configuração de servidores.",
     "experience": {
       "title": "Experiência",
