@@ -20,8 +20,8 @@
   <div class="flex space-x-6">
     <Links
       activeClassName="border-b-4 border-rose-500 before:hidden"
-      iconActiveClassName="text-white"
-      iconInactiveClassName="text-white"
+      iconActiveClassName="text-black dark:text-white"
+      iconInactiveClassName="text-black dark:text-white"
       animation="underline-inside-out"
     />
   </div>
