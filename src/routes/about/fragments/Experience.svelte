@@ -2,7 +2,7 @@
   import { _, isLoading } from 'svelte-i18n';
   import type { ExperienceItemType } from '$lib/types/i18n';
   import SuitcaseIcon from '$components/icons/SuitcaseIcon.svelte';
-  import Title from './Title.svelte';
+  import Title from './fragments/Title.svelte';
   import I18nText from '$components/I18nText.svelte';
   import Card from '$components/Card.svelte';
 
@@ -22,7 +22,7 @@
       <Card className="dark:bg-gray-950">
         <div class="flex space-x-2">
           <SuitcaseIcon className="" />
-          <h4 class="text-sm font-semibold uppercase">
+          <h4 class="text-sm font-semibold uppercase text-center sm:text-left">
             {role} - {company}
           </h4>
         </div>

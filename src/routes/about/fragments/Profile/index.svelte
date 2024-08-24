@@ -9,7 +9,9 @@
   import Badge from '$components/Badge.svelte';
 </script>
 
-<div class="flex flex-col-reverse sm:flex-row justify-between items-center">
+<div
+  class="flex flex-col-reverse sm:flex-row justify-between items-center text-center sm:text-left"
+>
   <div class="flex flex-col items-center sm:items-start">
     <h1 class="text-4xl font-bold">Vitor Schirmer</h1>
     <h2 class="text-md">
