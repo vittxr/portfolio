@@ -30,7 +30,7 @@
   <Picture />
 </div>
 
-<div class="flex space-x-2">
+<div class="mt-2 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
   <Badge className="flex items-center space-x-1">
     <PhoneIcon />
     <span>+55 (41) 9997758225 </span>
