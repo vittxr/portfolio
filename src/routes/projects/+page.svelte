@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { _ } from 'svelte-i18n';
+  import { _, isLoading } from 'svelte-i18n';
   import I18nText from '$components/I18nText.svelte';
   import Projects from './fragments/Projects.svelte';
 </script>
 
 <svelte:head>
-  <title>vschirmer / {$_('utils.nav.projects')}</title>
+  <title>vschirmer / {$isLoading ? 'loading' : $_('utils.nav.projects')}</title>
 </svelte:head>
 
 <div class="pt-10">

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { _ } from 'svelte-i18n';
+  import { _, isLoading } from 'svelte-i18n';
   import Timeline from './fragments/Timeline.svelte';
   import Experience from './fragments/Experience.svelte';
   import Card from '$components/Card.svelte';
@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>vschirmer / {$_('utils.nav.about')}</title>
+  <title>vschirmer / {$isLoading ? 'loading' : $_('utils.nav.about')}</title>
 </svelte:head>
 
 <div class="pt-10 space-y-10 mb-10">
