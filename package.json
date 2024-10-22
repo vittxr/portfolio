@@ -32,6 +32,6 @@
 	},
 	"dependencies": {
 		"@types/gsap": "^3.0.0",
-		"svelte-i18n": "^4.0.0"
+		"svelte-i18n": "^4.0.1"
 	}
 }
