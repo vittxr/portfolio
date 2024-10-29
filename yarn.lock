@@ -474,10 +474,10 @@
   dependencies:
     import-meta-resolve "^4.1.0"
 
-"@sveltejs/adapter-netlify@^4.3.5":
-  version "4.3.5"
-  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-4.3.5.tgz#4242119f9fbe2bca3718f6315e4e1927d76f09b1"
-  integrity sha512-3Gvk8WumDXw35xurzkUHw3fWoKlDXzcSpP76gNeHNx2AFuTtaOcv/utVLAtdmC1FyfpHk4YwAGzyEvFmmaJhwg==
+"@sveltejs/adapter-netlify@^4.3.6":
+  version "4.3.6"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-4.3.6.tgz#1f1e40d9cf41a4e23f49d1e00b0a193414da8054"
+  integrity sha512-o1M8SlNeXiTD4X9T/q+WZaeStEzRlGZeMc/NHrgK5dhnrJhN3UFzMqFV4mnNAVyxqyvsQ87FYyjPlkDualSwRA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     esbuild "^0.21.5"
