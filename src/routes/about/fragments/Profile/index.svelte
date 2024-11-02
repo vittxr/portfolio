@@ -4,9 +4,10 @@
   import Picture from './fragments/Picture.svelte';
   import I18nText from '$components/I18nText.svelte';
   import download from '$lib/utils/download';
-  import PhoneIcon from '$components/icons/PhoneIcon.svelte';
   import EmailIcon from '$components/icons/EmailIcon.svelte';
   import Badge from '$components/Badge.svelte';
+  import WppIcon from '$components/icons/WppIcon.svelte';
+  import { isLoading } from 'svelte-i18n';
 </script>
 
 <div
@@ -34,12 +35,35 @@
 
 <div class="mt-2 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
   <Badge className="flex items-center space-x-1">
-    <PhoneIcon />
-    <span>+55 (41) 9997758225 </span>
+    <WppIcon className="text-black dark:text-white" />
+    {#if $isLoading}
+      <a href="https://wa.me/55419997758225" target="_blank "> +55 (41) 9997758225 </a>
+    {:else}
+      <a
+        href="https://wa.me/55419997758225?text={encodeURIComponent(
+          $_('about_page.contact_placeholder_text'),
+        )}"
+        target="_blank "
+      >
+        +55 (41) 9997758225
+      </a>
+    {/if}
   </Badge>
   <Badge className="flex items-center space-x-1">
     <EmailIcon />
-    <span>vitor.roberto3022@gmail.com</span>
+
+    {#if $isLoading}
+      <a href="https://wa.me/55419997758225" target="_blank "> +55 (41) 9997758225 </a>
+    {:else}
+      <a
+        href="mailto:vitor.roberto3022@gmail.com?subject={encodeURIComponent(
+          $_('about_page.contact_placeholder_text'),
+        )}"
+        target="_blank "
+      >
+        vitor.roberto3022@gmail.com
+      </a>
+    {/if}
   </Badge>
 </div>
 

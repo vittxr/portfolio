@@ -121,7 +121,8 @@
           ]
         }
       ]
-    }
+    },
+    "contact_placeholder_text": "Hi! I found your contact through your portfolio..."
   },
   "projects_page": {
     "title": "Projects",

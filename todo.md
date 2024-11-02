@@ -1,8 +1,6 @@
 # Todo
 
-- [ ] improve contacts badge in about page.
-  - [ ] on phone number click, user should go to wpp page with placeholder text.
-  - [ ] on email click, open user email box.
+
 - [ ] load pfp in background on home page load.
 
 # Doing
@@ -31,3 +29,6 @@
 - [x] add contact section in about about page:
   - [x] add phone number
   - [x] add email
+- [x] improve contacts badge in about page.
+  - [x] on phone number click, user should go to wpp page with placeholder text.
+  - [x] on email click, open user email box.
