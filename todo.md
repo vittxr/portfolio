@@ -1,6 +1,9 @@
 # Todo
 
-- [ ] improve contacts badge in about page: when user click in it copy the value to his clipboard (it might be worth add a feedback animation)
+- [ ] improve contacts badge in about page.
+  - [ ] on phone number click, user should go to wpp page with placeholder text.
+  - [ ] on email click, open user email box.
+- [ ] load pfp in background on home page load.
 
 # Doing
 
