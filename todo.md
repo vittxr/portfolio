@@ -1,8 +1,6 @@
 # Todo
 
 
-- [ ] load pfp in background on home page load.
-
 # Doing
 
    
@@ -32,3 +30,4 @@
 - [x] improve contacts badge in about page.
   - [x] on phone number click, user should go to wpp page with placeholder text.
   - [x] on email click, open user email box.
+- [x] load pfp in background on home page load.
