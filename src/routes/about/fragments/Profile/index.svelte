@@ -37,15 +37,15 @@
   <Badge className="flex items-center space-x-1">
     <WppIcon className="text-black dark:text-white" />
     {#if $isLoading}
-      <a href="https://wa.me/55419997758225" target="_blank "> +55 (41) 9997758225 </a>
+      <a href="https://wa.me/5541997758225" target="_blank "> +55 (41) 9997758225 </a>
     {:else}
       <a
-        href="https://wa.me/55419997758225?text={encodeURIComponent(
+        href="https://wa.me/5541997758225?text={encodeURIComponent(
           $_('about_page.contact_placeholder_text'),
         )}"
         target="_blank "
       >
-        +55 (41) 9997758225
+        +55 (41) 997758225
       </a>
     {/if}
   </Badge>
