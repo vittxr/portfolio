@@ -1,5 +1,6 @@
 # Todo
 
+- [ ] add "course certificates" secion in about page.
 
 # Doing
 
