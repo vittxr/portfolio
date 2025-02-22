@@ -1,6 +1,10 @@
 # Todo
 
-- [ ] add "course certificates" secion in about page.
+- [ ] add "course certificates" section in about page.
+- [ ] update "TIMELINE" section.
+- [ ] improve LangToggle design. Use a tab like design instead of a select.  
+- [ ] add skills section in about page.
+- [ ] update page icon.
 
 # Doing
 
