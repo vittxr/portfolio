@@ -603,10 +603,10 @@
     esbuild "^0.24.0"
     set-cookie-parser "^2.6.0"
 
-"@sveltejs/kit@^2.19.0":
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.19.0.tgz#e231feb47e3c50d329f86221d40495815e66ad6f"
-  integrity sha512-UTx28Ad4sYsLU//gqkEo5aFOPFBRT2uXCmXTsURqhurDCvzkVwXruJgBcHDaMiK6RKKpYRteDUaXYqZyGPgCXQ==
+"@sveltejs/kit@^2.20.0":
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/@sveltejs/kit/-/kit-2.20.0.tgz#02b5446a7298ad54afe971505f443d1da4490c91"
+  integrity sha512-xCUGevE2GFhpDAxZiVOsk6HKaBicwU7uWYcMOcpHCDcjoN6mKBIeMEzuddRMqSA4zjbeA+RcillCv1ppkWRwSQ==
   dependencies:
     "@types/cookie" "^0.6.0"
     cookie "^0.6.0"
