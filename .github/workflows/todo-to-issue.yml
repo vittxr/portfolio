@@ -1,0 +1,28 @@
+name: "Run TODO to Issue"
+
+on: [ "push" ]
+jobs:
+  build:                    
+    runs-on: "ubuntu-latest"
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: "Checkout Repository"
+        uses: "actions/checkout@v4"
+
+      - name: Get latest commit message
+        id: get_commit
+        run: |
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          echo "message<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$COMMIT_MSG"       >> "$GITHUB_OUTPUT"
+          echo "EOF"               >> "$GITHUB_OUTPUT"
+
+      - name: "TODO to Issue"
+        if: | 
+          !startsWith(steps.get_commit.outputs.message, '⬆ bump') && !startsWith(steps.get_commit.outputs.message, 'Merge pull request')
+        uses: "alstr/todo-to-issue-action@v5"
+        with:
+          CLOSE_ISSUES: true
+        
