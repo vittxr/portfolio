@@ -1332,10 +1332,10 @@ svelte@^4.2.19:
     magic-string "^0.30.4"
     periscopic "^3.1.0"
 
-tailwindcss@^4.0.14:
-  version "4.0.14"
-  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.0.14.tgz#531548524eb422fb8b89a24ebdf267c6726a09c6"
-  integrity sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==
+tailwindcss@^4.1.8:
+  version "4.1.8"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.1.8.tgz#5d66d095ee7d82f03d6dbc6158bc248e064a5c05"
+  integrity sha512-kjeW8gjdxasbmFKpVGrGd5T4i40mV5J2Rasw48QARfYeQ8YS9x02ON9SFWax3Qf616rt4Cp3nVNIj6Hd1mP3og==
 
 timers-ext@^0.1.7:
   version "0.1.7"
