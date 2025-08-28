@@ -1,3 +1,8 @@
+# Start dev server
+
+1. `yarn install`
+2. `yarn dev`
+
 # Deploy
 
 Sources:
