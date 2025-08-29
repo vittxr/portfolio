@@ -133,26 +133,29 @@
     "items": [
       {
         "name": "extractify",
-        "description": "Uma aplicação web simples que permite converter um arquivo em texto.",
-        "github_repo": "https://github.com/vittxr/file_to_text",
-        "live_demo": "https://doc-to-text.vercel.app",
+        "description": "Meu projeto de TCC, uma aplicação web que permite extrair texto de arquivos de forma automatizada, como de imagens e pdfs, para gerar relatórios.",
+        "github_repo": "https://github.com/ocr-extractify/extractify",
+        "live_demo": null,
         "tools": [
           "ReactJS",
           "Typescript",
+          "Shadcn/ui",
           "Tailwind",
           "Fastapi",
-          "MongoDB",
+          "PostgresSQL",
           "Debian",
           "Nginx",
           "Supervisor",
           "Docker",
-          "DocumentAI API"
+          "DocumentAI API",
+          "Firebase",
+          "Tesseract"
         ]
       },
       {
         "name": "file-to-text",
         "description": "Uma aplicação web simples que permite converter um arquivo em texto.",
-        "github_repo": "https://github.com/vittxr/file_to_text",
+        "github_repo": "https://github.com/ocr-extractify/file_to_text",
         "live_demo": "https://doc-to-text.vercel.app",
         "tools": [
           "ReactJS",

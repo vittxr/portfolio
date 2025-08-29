@@ -132,9 +132,30 @@
     "description": "Here are some projects that I have developed.",
     "items": [
       {
+        "name": "extractify",
+        "description": "My TCC project, a web application that allows you to extract text from files automatically, as images and pdfs, to generate reports.",
+        "github_repo": "https://github.com/ocr-extractify/extractify",
+        "live_demo": null,
+        "tools": [
+          "ReactJS",
+          "Typescript",
+          "Shadcn/ui",
+          "Tailwind",
+          "Fastapi",
+          "PostgresSQL",
+          "Debian",
+          "Nginx",
+          "Supervisor",
+          "Docker",
+          "DocumentAI API",
+          "Firebase",
+          "Tesseract"
+        ]
+      },
+      {
         "name": "file-to-text",
         "description": "A simple web application that allows you to convert a file to text.",
-        "github_repo": "https://github.com/vittxr/file_to_text",
+        "github_repo": "https://github.com/ocr-extractify/file_to_text",
         "live_demo": "https://doc-to-text.vercel.app",
         "tools": [
           "ReactJS",
