@@ -19,8 +19,8 @@
     <Card id="experience" className="py-8">
       <Experience />
     </Card>
-    <Card id="timeline" className="py-8">
+    <!-- <Card id="timeline" className="py-8">
       <Timeline />
-    </Card>
+    </Card> -->
   </div>
 </div>

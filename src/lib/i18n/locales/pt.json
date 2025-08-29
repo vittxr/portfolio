@@ -132,6 +132,24 @@
     "description": "Aqui estão alguns projetos que eu desenvolvi.",
     "items": [
       {
+        "name": "extractify",
+        "description": "Uma aplicação web simples que permite converter um arquivo em texto.",
+        "github_repo": "https://github.com/vittxr/file_to_text",
+        "live_demo": "https://doc-to-text.vercel.app",
+        "tools": [
+          "ReactJS",
+          "Typescript",
+          "Tailwind",
+          "Fastapi",
+          "MongoDB",
+          "Debian",
+          "Nginx",
+          "Supervisor",
+          "Docker",
+          "DocumentAI API"
+        ]
+      },
+      {
         "name": "file-to-text",
         "description": "Uma aplicação web simples que permite converter um arquivo em texto.",
         "github_repo": "https://github.com/vittxr/file_to_text",

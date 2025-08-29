@@ -8,6 +8,8 @@
   import Badge from '$components/Badge.svelte';
   import WppIcon from '$components/icons/WppIcon.svelte';
   import { isLoading } from 'svelte-i18n';
+  import LinkedinIcon from '$components/icons/LinkedinIcon.svelte';
+  import GithubIcon from '$components/icons/GithubIcon.svelte';
 </script>
 
 <div
@@ -64,6 +66,16 @@
         vitor.roberto3022@gmail.com
       </a>
     {/if}
+  </Badge>
+
+  <Badge className="flex items-center space-x-1">
+    <LinkedinIcon />
+    <a href="https://www.linkedin.com/in/vschirmer" target="_blank "> LinkedIn </a>
+  </Badge>
+
+  <Badge className="flex items-center space-x-1">
+    <GithubIcon />
+    <a href="https://github.com/vittxr" target="_blank "> GitHub </a>
   </Badge>
 </div>
 
