@@ -2,10 +2,12 @@
   import GithubIcon from '$components/icons/GithubIcon.svelte';
   import LinkedinIcon from '$components/icons/LinkedinIcon.svelte';
   import { _ } from 'svelte-i18n';
+
+  const currentYear = new Date().getFullYear();
 </script>
 
 <footer class="flex justify-between">
-  <span class=" text-sm">© 2024 - Vitor Schirmer</span>
+  <span class=" text-sm">© {currentYear} - Vitor Schirmer</span>
 
   <div class="flex space-x-2">
     <a href="https://github.com/vittxr" target="_blank">
