@@ -47,12 +47,14 @@
           "description": "Desenvolvimento de aplicações de ponta a ponta para a gestão interna da empresa",
           "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, Flask, ReactJS, MySQL, Heroku e Vercel.",
           "responsibilities": [
-            "Desenvolvimento de websites e aplicativos móveis",
-            "Desenvolvimento de APIs usando FastAPI e Flask",
-            "Análise de dados pré-existentes para gerar relatórios usando Pandas e Numpy",
-            "Manutenção de um site legado desenvolvido em PHP",
-            "Manutenção de um servidor Linux (Debian), onde as aplicações estão hospedadas",
-            "Uso de serviços do Google: Firebase, Drive API, Sheets API, Document AI e Compute Engine"
+            "Gestão de recursos agrícolas: Fui responsável pela arquitetura e desenvolvimento completo de uma aplicação web para a gestão de mapas, atuando em todas as camadas: backend, frontend, banco de dados e servidor. No frontend, utilizei Next.js, TypeScript e Tailwind CSS, enquanto o backend foi desenvolvido em FastAPI. A plataforma permitia aos agricultores gerenciar diversos recursos do setor, como produtos, mapas de prescrição, clientes, unidades de trabalho, fazendas e talhões. Para o armazenamento de dados, optei pelo PostgreSQL devido ao suporte avançado a extensões, como JSON e LTree, essenciais para o projeto. O uso do LTree foi fundamental para representar a estrutura hierárquica de pastas, possibilitando organizar e relacionar recursos de forma hierárquica. Fiz o deploy desse projeto em um servidor Debian, utilizando Nginx como proxy e Supervisor para gerenciar backend.",
+            "Estação meteorológica (weatherstation): Participei do desenvolvimento do backend em ExpressJS, responsável por receber dados enviados pelas estações meteorológicas e gerar relatórios para os fazendeiros com informações sobre o ambiente e o solo (como temperatura, velocidade do vento, máximas e mínimas diárias, umidade e taxa de potássio do solo, entre outros). Além disso, fui responsável pela arquitetura do servidor, configurando o Nginx como proxy reverso, o PM2 para gerenciamento de processos e serviços, e o MongoDB para armazenamento dos dados. Esses dados serão usados para análise e prover relatórios precisos, como por exemplo de qual a melhor época para cultivo.",
+            "Relatórios de Leads com IA: Desenvolvi um sistema web utilizando ReactJS, Tailwind CSS e TypeScript para que os funcionários internos pudessem gerar relatórios a partir da base de dados do sistema externo LiveAgent. O backend, construído em FastAPI, integrava-se tanto à API do LiveAgent quanto à API da OpenAI. Para lidar com o grande volume de leads, implementei estratégias de processamento em batch e refinamento de prompts. Realizei o deploy da aplicação em um servidor Debian, utilizando MongoDB para armazenamento dos relatórios, Nginx como proxy reverso e Supervisor para gerenciar o serviço do FastAPI.",
+            "Gerenciamento de Planilhas: Implementei planilhas automáticas alimentadas em tempo real pelo ERP da empresa. Para isso, desenvolvi scripts em Python que integravam a API do ERP com a do Google Sheets, configurados para execução periódica em um servidor Debian.",
+            "Aplicativo Mobile: Desenvolvi um aplicativo em React Native para que os técnicos instaladores pudessem registrar fotos dos produtos instalados, garantindo maior controle e rastreabilidade das operações.",
+            "Sistema Intranet: Criei um portal interno para gestão de recursos administrativos, incluindo notas fiscais, comissões, ordens de compra, funcionários e procedimentos. O frontend foi desenvolvido em React, TypeScript e Tailwind CSS, enquanto o backend foi implementado em FastAPI com MongoDB para persistência de dados.",
+            "Telemetria/Observabilidade:  Utilizei o Sentry para monitorar as aplicações da empresa, coletando logs de erros e analisando requisições. Essa ferramenta permitiu identificar falhas e localizar gargalos de desempenho, auxiliando na otimização e maior confiabilidade dos sistemas.",
+            "Configuração de serviços em Nuvem no GCP: Utilizei o Google Cloud para usar recursos em Nuvem, como Google Cloud Storage/Firebase para armazenar arquivos, Google Maps API para gerenciar coordenadas das fazendas, Google Spreadsheets API para se conectar à planilhas do google, Compute Engine para gerenciar os servidores, entre outros."
           ]
         },
         {
@@ -63,10 +65,11 @@
           "description": "Desenvolvimento e manutenção de aplicações web.",
           "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL e Heroku.",
           "responsibilities": [
-            "Manutenção de um site desenvolvido com PHP",
-            "Desenvolvimento de um editor de texto usando HTML, CSS, JavaScript e jQuery",
-            "Desenvolvimento de um chatbot para o Telegram usando Python",
-            "Manutenção de uma API desenvolvida com Flask"
+            "Desenvolvimento de um editor web para a prefeitura utilizando a biblioteca Summernote com Jquery.",
+            "Desenvolvimento de landing pages utilizando React e JavaScript",
+            "Desenvolvimento de um bot para telegram utilizando Python, para o gerenciamento de milhas aéreas.",
+            "Manutenção em site laravel hospedado na hostinger com mais de 500 mil requisições por mês.",
+            "Melhoria em um site de gestão (KPIs e OKRs) desenvolvido em flask."
           ]
         }
       ]
