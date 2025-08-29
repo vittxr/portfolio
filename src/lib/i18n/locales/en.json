@@ -44,8 +44,8 @@
           "company": "Farmpro",
           "start_date": "2022-11-03",
           "end_date": null,
-          "description": "End-to-end development of applications for internal company management",
-          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, Flask, ReactJS, MySQL, Heroku and Vercel.",
+          "description": "End-to-end development of applications",
+          "technologies": "Python, Flask, FastAPI, Debian, Nginx, Supervisor, Docker, Sentry, GCP, Heroku, Vercel, Firebase, MongoDB, MariaDB/MySQL, PostgreSQL, ExpressJS, NodeJS, PHP, Laravel, CodeIgniter, HTML, CSS, JavaScript, Typescript, ReactJS, Next.js, Tailwind, Shadcn/ui, BootStrap and Jquery.",
           "responsibilities": [
             "Agricultural Resource Management: I was responsible for the complete architecture and development of a web application for map management, working on all layers: backend, frontend, database, and server. For the frontend, I used Next.js, TypeScript, and Tailwind CSS, while the backend was developed in FastAPI. The platform allowed farmers to manage various agricultural sector resources, such as products, prescription maps, customers, work units, farms, and plots. For data storage, I chose PostgreSQL due to its advanced support for extensions like JSON and LTree, essential for the project. The use of LTree was fundamental for representing the hierarchical folder structure, enabling the organization and relationship of resources hierarchically. I deployed this project on a Debian server, using Nginx as a proxy and Supervisor to manage the backend.",
             "Weather Station (weatherstation): I participated in the development of the ExpressJS backend, responsible for receiving data sent by weather stations and generating reports for farmers with information about the environment and soil (such as temperature, wind speed, daily highs and lows, humidity, and soil potassium levels, among others). Additionally, I was responsible for the server architecture, configuring Nginx as a reverse proxy, PM2 for process and service management, and MongoDB for data storage. This data will be used for analysis and to provide accurate reports, such as determining the best time for cultivation.",
@@ -63,7 +63,7 @@
           "start_date": "2022-03-20",
           "end_date": "2022-11-03",
           "description": "Development and maintenance of web applications.",
-          "technologies": "HTML, CSS, JavaScript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL and Heroku.",
+          "technologies": "HTML, CSS, JavaScript, Typescript, Bootstrap, Python, JQuery, Flask, ReactJS, MySQL, Heroku, PHP and Laravel",
           "responsibilities": [
             "Development of a web editor for the city hall using the Summernote library with jQuery.",
             "Development of landing pages using React and JavaScript",
