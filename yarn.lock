@@ -613,12 +613,10 @@
   resolved "https://registry.npmjs.org/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.22.4.tgz"
   integrity sha512-j8pPKp53/lq9lMXN57S8cFz0MynJk8OWNuUnXct/9KCpKU7DgU3bYMJhwWmcqC0UU29p8Lr0/7KEVcaM6bf47Q==
 
-"@sveltejs/adapter-auto@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/@sveltejs/adapter-auto/-/adapter-auto-6.0.0.tgz"
-  integrity sha512-7mR2/G7vlXakaOj6QBSG9dwBfTgWjV+UnEMB5Z6Xu0ZbdXda6c0su1fNkg0ab0zlilSkloMA2NjCna02/DR7sA==
-  dependencies:
-    import-meta-resolve "^4.1.0"
+"@sveltejs/adapter-auto@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-auto/-/adapter-auto-7.0.0.tgz#e3f257a0d1be3383f6cd0c146aed8d470b33a7fe"
+  integrity sha512-ImDWaErTOCkRS4Gt+5gZuymKFBobnhChXUZ9lhUZLahUgvA4OOvRzi3sahzYgbxGj5nkA6OV0GAW378+dl/gyw==
 
 "@sveltejs/adapter-netlify@^5.2.3":
   version "5.2.3"
