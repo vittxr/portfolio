@@ -127,6 +127,10 @@
     },
     "contact_placeholder_text": "Olá! Encontrei o seu contato através do seu portfólio..."
   },
+  "tools_page": {
+    "title": "Ferramentas",
+    "description": "Uma lista curada de ferramentas, bibliotecas e frameworks que uso nos meus projetos."
+  },
   "projects_page": {
     "title": "Projetos",
     "description": "Aqui estão alguns projetos que eu desenvolvi.",

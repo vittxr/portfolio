@@ -127,6 +127,10 @@
     },
     "contact_placeholder_text": "Hi! I found your contact through your portfolio..."
   },
+  "tools_page": {
+    "title": "Tools",
+    "description": "A curated list of tools, libraries, and frameworks I use in my projects."
+  },
   "projects_page": {
     "title": "Projects",
     "description": "Here are some projects that I have developed.",

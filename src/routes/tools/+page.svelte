@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { _, isLoading } from 'svelte-i18n';
   import Card from '$components/Card.svelte';
   import MarkdownContent from './fragments/MarkdownContent.svelte';
   import Title from './fragments/Title.svelte';
@@ -8,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>vschirmer / Tools</title>
+  <title>vschirmer / {$isLoading ? 'loading' : $_('tools_page.title')}</title>
 </svelte:head>
 
 <div class="pt-10 space-y-10 mb-10">
