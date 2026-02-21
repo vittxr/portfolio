@@ -18,8 +18,7 @@
   <div class="flex flex-col items-center sm:items-start">
     <h1 class="text-4xl font-bold">Vitor Schirmer</h1>
     <h2 class="text-md">
-      <I18nText>{$_('about_page.software_developer_at')}</I18nText>
-      <b>FARMPRO</b>
+      <I18nText>{$_('about_page.software_developer')}</I18nText>
     </h2>
 
     <DownloadButton
