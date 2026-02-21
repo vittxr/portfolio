@@ -5,6 +5,7 @@
   import Card from '$components/Card.svelte';
   import Profile from './fragments/Profile/index.svelte';
   import flags from '../../../feature-flags';
+  import Tools from './fragments/Tools.svelte';
 </script>
 
 <svelte:head>
@@ -25,6 +26,11 @@
     {#if flags.show_timeline_component}
       <Card id="timeline" className="py-8">
         <Timeline />
+      </Card>
+    {/if}
+    {#if flags.show_tools_component}
+      <Card id="tools" className="py-8">
+        <Tools />
       </Card>
     {/if}
   </div>

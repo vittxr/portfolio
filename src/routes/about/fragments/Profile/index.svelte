@@ -1,16 +1,15 @@
 <script lang="ts">
   import DownloadButton from '$components/buttons/DownloadButton.svelte';
-  import { _ } from 'svelte-i18n';
+  import { _, isLoading } from 'svelte-i18n';
   import Picture from './fragments/Picture.svelte';
   import I18nText from '$components/I18nText.svelte';
   import download from '$lib/utils/download';
   import EmailIcon from '$components/icons/EmailIcon.svelte';
   import Badge from '$components/Badge.svelte';
   import WppIcon from '$components/icons/WppIcon.svelte';
-  import { isLoading } from 'svelte-i18n';
   import LinkedinIcon from '$components/icons/LinkedinIcon.svelte';
   import GithubIcon from '$components/icons/GithubIcon.svelte';
-  import flags from '../../../../../feature-flags'
+  import flags from '../../../../../feature-flags';
   import ExternalLinkButton from '$components/buttons/ExternalLinkButton.svelte';
 </script>
 
@@ -22,7 +21,7 @@
     <h2 class="text-md">
       <I18nText>{$_('about_page.software_developer')}</I18nText>
     </h2>
-    
+
     {#if flags.resume_access_type === 'download'}
       <DownloadButton
         className="flex items-center space-x-1 w-fit uppercase mt-1"
@@ -36,7 +35,7 @@
     {#if flags.resume_access_type === 'external_link'}
       <ExternalLinkButton
         className="flex items-center space-x-1 w-fit uppercase mt-1"
-        href={$_('about_page.resume_path')}
+        href={!isLoading ? $_('about_page.resume_path') : ''}
       >
         <span><I18nText>{$_('about_page.resume')}</I18nText></span>
       </ExternalLinkButton>
