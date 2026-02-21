@@ -4,7 +4,6 @@
 - [ ] update "TIMELINE" section.
 - [ ] improve LangToggle design. Use a tab like design instead of a select.  
 - [ ] add skills section in about page.
-- [ ] update page icon.
 
 # Doing
 
@@ -36,3 +35,4 @@
   - [x] on phone number click, user should go to wpp page with placeholder text.
   - [x] on email click, open user email box.
 - [x] load pfp in background on home page load.
+- [x] update page icon.
