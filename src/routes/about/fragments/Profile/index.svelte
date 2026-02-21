@@ -10,6 +10,8 @@
   import { isLoading } from 'svelte-i18n';
   import LinkedinIcon from '$components/icons/LinkedinIcon.svelte';
   import GithubIcon from '$components/icons/GithubIcon.svelte';
+  import flags from '../../../../../feature-flags'
+  import ExternalLinkButton from '$components/buttons/ExternalLinkButton.svelte';
 </script>
 
 <div
@@ -20,15 +22,25 @@
     <h2 class="text-md">
       <I18nText>{$_('about_page.software_developer')}</I18nText>
     </h2>
-
-    <DownloadButton
-      className="flex items-center space-x-1 w-fit uppercase mt-1"
-      onClick={() => {
-        download($_('about_page.resume_path'), $_('about_page.resume'));
-      }}
-    >
-      <span><I18nText>{$_('about_page.resume')}</I18nText></span>
-    </DownloadButton>
+    
+    {#if flags.resume_access_type === 'download'}
+      <DownloadButton
+        className="flex items-center space-x-1 w-fit uppercase mt-1"
+        onClick={() => {
+          download($_('about_page.resume_path'), $_('about_page.resume'));
+        }}
+      >
+        <span><I18nText>{$_('about_page.resume')}</I18nText></span>
+      </DownloadButton>
+    {/if}
+    {#if flags.resume_access_type === 'external_link'}
+      <ExternalLinkButton
+        className="flex items-center space-x-1 w-fit uppercase mt-1"
+        href={$_('about_page.resume_path')}
+      >
+        <span><I18nText>{$_('about_page.resume')}</I18nText></span>
+      </ExternalLinkButton>
+    {/if}
   </div>
 
   <Picture />

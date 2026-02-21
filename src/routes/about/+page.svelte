@@ -4,6 +4,7 @@
   import Experience from './fragments/Experience.svelte';
   import Card from '$components/Card.svelte';
   import Profile from './fragments/Profile/index.svelte';
+  import flags from '../../../feature-flags';
 </script>
 
 <svelte:head>
@@ -16,11 +17,15 @@
   </Card>
 
   <div class="space-y-10">
-    <Card id="experience" className="py-8">
-      <Experience />
-    </Card>
-    <!-- <Card id="timeline" className="py-8">
-      <Timeline />
-    </Card> -->
+    {#if flags.show_experience_component}
+      <Card id="experience" className="py-8">
+        <Experience />
+      </Card> 
+    {/if}
+    {#if flags.show_timeline_component}
+      <Card id="timeline" className="py-8">
+        <Timeline />
+      </Card>
+    {/if}
   </div>
 </div>
