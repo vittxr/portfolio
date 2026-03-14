@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { marked } from 'marked';
-  import { _, isLoading } from 'svelte-i18n';
+  import { _ } from 'svelte-i18n';
   import I18nText from '$components/I18nText.svelte';
   import Link from '$components/Link.svelte';
   import Title from './fragments/Title.svelte';
@@ -24,9 +24,6 @@
     } finally {
       loading = false;
     }
-  });
-  onMount(() => {
-    listbox = document.getElementById(`${id}-listbox`);
   });
 </script>
 
