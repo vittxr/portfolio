@@ -35,7 +35,7 @@
     {#if flags.resume_access_type === 'external_link'}
       <ExternalLinkButton
         className="flex items-center space-x-1 w-fit uppercase mt-1"
-        href={!isLoading ? $_('about_page.resume_path') : ''}
+        href={!$isLoading ? $_('about_page.resume_path') : ''}
       >
         <span><I18nText>{$_('about_page.resume')}</I18nText></span>
       </ExternalLinkButton>
