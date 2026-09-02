@@ -33,7 +33,7 @@
   {:else if error}
     <p>Failed to load content.</p>
   {:else}
-    <Link classname="text-xs underline" href={ghRepo}>{ghRepo}</Link>
+    <!-- <Link classname="break-all text-xs underline" href={ghRepo}>{ghRepo}</Link> -->
     <div class="prose prose-sm max-w-none dark:prose-invert">
       {@html content}
     </div>
