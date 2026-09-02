@@ -126,10 +126,6 @@
         }
       ]
     },
-    "tools": {
-      "title": "Technologies",
-      "description": "All the technologies I use as a developer"
-    },
     "contact_placeholder_text": "Hi! I found your contact through your portfolio..."
   },
   "projects_page": {

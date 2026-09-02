@@ -28,11 +28,6 @@
 </script>
 
 <section class="w-full">
-  <Title ancorKey="tools">
-    <I18nText>{$_('about_page.tools.title')}</I18nText>
-  </Title>
-  <h2><I18nText>{$_('about_page.tools.description')}</I18nText></h2>
-
   {#if loading}
     loading
   {:else if error}

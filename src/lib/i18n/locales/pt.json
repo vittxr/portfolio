@@ -126,10 +126,6 @@
         }
       ]
     },
-    "tools": {
-      "title": "Tecnologias",
-      "description": "Todas tecnologias que utilizo como desenvolvedor"
-    },
     "contact_placeholder_text": "Olá! Encontrei o seu contato através do seu portfólio..."
   },
   "projects_page": {
