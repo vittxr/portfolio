@@ -6,7 +6,7 @@
   import Link from '$components/Link.svelte';
   import Title from './fragments/Title.svelte';
 
-  const ghRepo = 'https://raw.githubusercontent.com/vittxr/mytools/main/README.md';
+  const ghRepo = 'https://raw.githubusercontent.com/vittxr/myskills/main/README.md';
 
   let content = '';
   let loading = true;
