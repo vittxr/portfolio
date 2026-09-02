@@ -3,13 +3,14 @@
 - [ ] add "course certificates" section in about page.
 - [ ] update "TIMELINE" section.
 - [ ] improve LangToggle design. Use a tab like design instead of a select.  
-- [ ] add skills section in about page.
+- [ ] load gh-skills in the background and allow users to access the About page. Currently, the About page is frozen until the skills finish loading.
 
 # Doing
 
    
 # Done
 
+- [x] add skills section in about page.
 - [x] add a button to toggle the language.
 - [x] add alias path for imports.
 - [x] add a switch to toggle the theme
